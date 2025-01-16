@@ -1,0 +1,5 @@
+2024-12-20 14:53:36,255 - spam_application - DEBUG - debug message
+2024-12-20 14:53:36,255 - spam_application - INFO - info message
+2024-12-20 14:53:36,255 - spam_application - WARNING - warn message
+2024-12-20 14:53:36,255 - spam_application - ERROR - error message
+2024-12-20 14:53:36,255 - spam_application - CRITICAL - critical message
