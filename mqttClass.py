@@ -1,5 +1,5 @@
 import paho.mqtt.client as mqtt
-from defines import CONFIG
+from config import CONFIG
 import logging
 logger = logging.getLogger("logfile")
 

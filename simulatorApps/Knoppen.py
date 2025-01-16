@@ -106,7 +106,7 @@ class MyMQTTClass(mqtt.Client):
     def setup(self, name):
         f = None;
         self.mqttname = name;
-        self.connect("localhost", 1883, 60)
+        self.connect("192.168.20.122", 1883, 60)
         self.subscribe("CONTROLLER/"+name+"/#", 0)
 
     def run(self):
