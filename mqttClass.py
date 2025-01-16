@@ -4,7 +4,7 @@ import logging
 logger = logging.getLogger("logfile")
 
 class MyMQTTClass(mqtt.Client):
-    
+     
     def on_connect(self, mqttc, obj, flags, reason_code):
         logger.info("MQTT-rc: "+str(reason_code))
 
