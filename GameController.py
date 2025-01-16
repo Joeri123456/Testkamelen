@@ -89,15 +89,16 @@ def main():
                 Sounds.starttune(TUNES.start)
 
             case RS.waitcountdowngo:
-                vars.resetspeelbak1("NOW")
-                vars.resetspeelbak2("NOW")
-                vars.resetspeelbak3("NOW")
-                vars.resetspeelbak4("NOW")
-                vars.winner = 0
+
                 #if( (vars.getspeelbak1_score ==0) & (vars.getspeelbak2_score ==0) & (vars.getspeelbak3_score ==0) & (vars.getspeelbak4_score ==0))
                 if( (dt+5) < datetime.now().timestamp() or not Sounds.tuneisplaying()): # wwait for 1 seconds has passed.
                     vars.state = RS.playing # wait for sound to finish.
-                    Sounds.starttune(TUNES.camelsong)
+                    Sounds.starttune(TUNES.camelsong)                
+                    vars.resetspeelbak1("NOW")
+                    vars.resetspeelbak2("NOW")
+                    vars.resetspeelbak3("NOW")
+                    vars.resetspeelbak4("NOW")
+                    vars.winner = 0
 
             case RS.playing:
                 if(vars.speelbak1_score  >= vars.maxscore):

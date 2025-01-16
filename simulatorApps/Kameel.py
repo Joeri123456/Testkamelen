@@ -5,6 +5,7 @@ import tkinter.scrolledtext as st
 import random
 import paho.mqtt.client as mqtt
 import time
+from config import CONFIG
 
 #globalScore = 0
 main = None;
@@ -119,7 +120,7 @@ class MyMQTTClass(mqtt.Client):
     def setup(self, name):
         f = None;
         self.mqttname = name;
-        self.connect("localhost", 1883, 60)
+        self.connect(CONFIG.MQTTSERVER, CONFIG.MQTTPORT, 60)
         self.subscribe(self.mqttname+"/IN/#", 0)
 
     def run(self):
