@@ -25,7 +25,7 @@ class myVars:
         self._reset_pressed = False
         
         self._winner = 0
-        self.maxscore = 20
+        self.maxscore = 100
         self._speelbak1_score = 0
         self._speelbak2_score = 0
         self._speelbak3_score = 0
