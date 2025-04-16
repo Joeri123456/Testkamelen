@@ -4,6 +4,8 @@ from datetime import datetime
 from logging.handlers import RotatingFileHandler
 from soundmanager import SoundManager
 import logging
+from time import sleep
+
 logger = logging.getLogger("logfile")
 
 def main():
@@ -15,6 +17,7 @@ def main():
     logger.info('Starting main while lus.')
 
     while (rc == 0):
+        sleep(0.1)
         rc = vars.run();
         #RS.countdown1
         # statemachine loop

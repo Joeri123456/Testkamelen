@@ -8827,3 +8827,155 @@
 2025-01-09 19:13:01,757 - logfile - DEBUG - MQTT-Received PINGRESP
 2025-01-09 19:14:01,757 - logfile - DEBUG - MQTT-Sending PINGREQ
 2025-01-09 19:14:01,757 - logfile - DEBUG - MQTT-Received PINGRESP
+2025-02-06 20:41:13,999 - logfile - DEBUG - MQTT-Sending CONNECT (u0, p0, wr0, wq0, wf0, c1, k10) client_id=b'subscribe-40'
+2025-02-06 20:41:14,000 - logfile - DEBUG - MQTT-Sending SUBSCRIBE (d0, m1) [(b'SPEELBAK1/OUT/#', 0)]
+2025-02-06 20:41:14,000 - logfile - DEBUG - MQTT-Sending SUBSCRIBE (d0, m2) [(b'SPEELBAK2/OUT/#', 0)]
+2025-02-06 20:41:14,001 - logfile - DEBUG - MQTT-Sending SUBSCRIBE (d0, m3) [(b'SPEELBAK3/OUT/#', 0)]
+2025-02-06 20:41:14,001 - logfile - DEBUG - MQTT-Sending SUBSCRIBE (d0, m4) [(b'SPEELBAK4/OUT/#', 0)]
+2025-02-06 20:41:14,001 - logfile - DEBUG - MQTT-Sending SUBSCRIBE (d0, m5) [(b'KNOPPEN/OUT/#', 0)]
+2025-02-06 20:41:14,001 - logfile - DEBUG - MQTT-Sending SUBSCRIBE (d0, m6) [(b'KAMELEN/OUT/#', 0)]
+2025-02-06 20:41:15,062 - logfile - INFO - Starting main while lus.
+2025-02-06 20:41:15,165 - logfile - DEBUG - MQTT-Received CONNACK (0, 0)
+2025-02-06 20:41:15,165 - logfile - INFO - MQTT-rc: 0
+2025-02-06 20:41:15,266 - logfile - DEBUG - MQTT-Received SUBACK
+2025-02-06 20:41:15,266 - logfile - INFO - MQTT-Subscribed: 1 (0,)
+2025-02-06 20:41:15,367 - logfile - DEBUG - MQTT-Received SUBACK
+2025-02-06 20:41:15,367 - logfile - INFO - MQTT-Subscribed: 2 (0,)
+2025-02-06 20:41:15,468 - logfile - DEBUG - MQTT-Received SUBACK
+2025-02-06 20:41:15,468 - logfile - INFO - MQTT-Subscribed: 3 (0,)
+2025-02-06 20:41:15,570 - logfile - DEBUG - MQTT-Received SUBACK
+2025-02-06 20:41:15,570 - logfile - INFO - MQTT-Subscribed: 4 (0,)
+2025-02-06 20:41:15,671 - logfile - DEBUG - MQTT-Received SUBACK
+2025-02-06 20:41:15,671 - logfile - INFO - MQTT-Subscribed: 5 (0,)
+2025-02-06 20:41:15,773 - logfile - DEBUG - MQTT-Received SUBACK
+2025-02-06 20:41:15,773 - logfile - INFO - MQTT-Subscribed: 6 (0,)
+2025-02-06 20:41:24,008 - logfile - DEBUG - MQTT-Sending PINGREQ
+2025-02-06 20:41:24,109 - logfile - DEBUG - MQTT-Received PINGRESP
+2025-02-06 20:41:34,051 - logfile - DEBUG - MQTT-Sending PINGREQ
+2025-02-06 20:41:34,151 - logfile - DEBUG - MQTT-Received PINGRESP
+2025-02-06 20:41:44,092 - logfile - DEBUG - MQTT-Sending PINGREQ
+2025-02-06 20:41:44,193 - logfile - DEBUG - MQTT-Received PINGRESP
+2025-02-06 20:41:54,135 - logfile - DEBUG - MQTT-Sending PINGREQ
+2025-02-06 20:41:54,236 - logfile - DEBUG - MQTT-Received PINGRESP
+2025-02-06 20:42:04,182 - logfile - DEBUG - MQTT-Sending PINGREQ
+2025-02-06 20:42:04,282 - logfile - DEBUG - MQTT-Received PINGRESP
+2025-02-06 20:42:14,223 - logfile - DEBUG - MQTT-Sending PINGREQ
+2025-02-06 20:42:14,324 - logfile - DEBUG - MQTT-Received PINGRESP
+2025-02-06 20:42:24,266 - logfile - DEBUG - MQTT-Sending PINGREQ
+2025-02-06 20:42:24,367 - logfile - DEBUG - MQTT-Received PINGRESP
+2025-02-06 20:42:34,310 - logfile - DEBUG - MQTT-Sending PINGREQ
+2025-02-06 20:42:34,411 - logfile - DEBUG - MQTT-Received PINGRESP
+2025-02-06 20:42:44,353 - logfile - DEBUG - MQTT-Sending PINGREQ
+2025-02-06 20:42:44,454 - logfile - DEBUG - MQTT-Received PINGRESP
+2025-02-06 20:42:54,400 - logfile - DEBUG - MQTT-Sending PINGREQ
+2025-02-06 20:42:54,501 - logfile - DEBUG - MQTT-Received PINGRESP
+2025-02-06 20:43:04,443 - logfile - DEBUG - MQTT-Sending PINGREQ
+2025-02-06 20:43:04,544 - logfile - DEBUG - MQTT-Received PINGRESP
+2025-02-06 20:43:14,488 - logfile - DEBUG - MQTT-Sending PINGREQ
+2025-02-06 20:43:14,589 - logfile - DEBUG - MQTT-Received PINGRESP
+2025-02-06 20:43:24,527 - logfile - DEBUG - MQTT-Sending PINGREQ
+2025-02-06 20:43:24,629 - logfile - DEBUG - MQTT-Received PINGRESP
+2025-02-06 20:43:34,573 - logfile - DEBUG - MQTT-Sending PINGREQ
+2025-02-06 20:43:34,674 - logfile - DEBUG - MQTT-Received PINGRESP
+2025-02-06 20:43:44,619 - logfile - DEBUG - MQTT-Sending PINGREQ
+2025-02-06 20:43:44,820 - logfile - DEBUG - MQTT-Received PINGRESP
+2025-02-06 20:43:54,662 - logfile - DEBUG - MQTT-Sending PINGREQ
+2025-02-06 20:43:54,763 - logfile - DEBUG - MQTT-Received PINGRESP
+2025-02-06 20:44:04,708 - logfile - DEBUG - MQTT-Sending PINGREQ
+2025-02-06 20:44:04,808 - logfile - DEBUG - MQTT-Received PINGRESP
+2025-02-06 20:44:14,752 - logfile - DEBUG - MQTT-Sending PINGREQ
+2025-02-06 20:44:14,853 - logfile - DEBUG - MQTT-Received PINGRESP
+2025-02-06 20:44:24,794 - logfile - DEBUG - MQTT-Sending PINGREQ
+2025-02-06 20:44:24,895 - logfile - DEBUG - MQTT-Received PINGRESP
+2025-02-06 20:44:30,721 - logfile - DEBUG - MQTT-Received PUBLISH (d0, q0, r0, m0), 'KNOPPEN/OUT/CMD', ...  (5 bytes)
+2025-02-06 20:44:30,721 - logfile - DEBUG - MQTT-KNOPPEN/OUT/CMD 0 b'RESET'
+2025-02-06 20:44:30,721 - logfile - INFO - received message: 'KNOPPEN/OUT/CMD' 'RESET'
+2025-02-06 20:44:30,721 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m7), 'b'SPEELBAK1/IN/RESET'', ... (3 bytes)
+2025-02-06 20:44:30,723 - logfile - DEBUG - MQTT-published: 7
+2025-02-06 20:44:30,723 - logfile - INFO - MQTT-Send `NOW` to topic `SPEELBAK1/IN/RESET`
+2025-02-06 20:44:30,723 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m8), 'b'SPEELBAK2/IN/RESET'', ... (3 bytes)
+2025-02-06 20:44:30,724 - logfile - DEBUG - MQTT-published: 8
+2025-02-06 20:44:30,724 - logfile - INFO - MQTT-Send `NOW` to topic `SPEELBAK2/IN/RESET`
+2025-02-06 20:44:30,724 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m9), 'b'SPEELBAK3/IN/RESET'', ... (3 bytes)
+2025-02-06 20:44:30,724 - logfile - DEBUG - MQTT-published: 9
+2025-02-06 20:44:30,725 - logfile - INFO - MQTT-Send `NOW` to topic `SPEELBAK3/IN/RESET`
+2025-02-06 20:44:30,725 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m10), 'b'SPEELBAK4/IN/RESET'', ... (3 bytes)
+2025-02-06 20:44:30,725 - logfile - DEBUG - MQTT-published: 10
+2025-02-06 20:44:30,726 - logfile - INFO - MQTT-Send `NOW` to topic `SPEELBAK4/IN/RESET`
+2025-02-06 20:44:30,726 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m11), 'b'GAMECONTROLLER/OUT/STATE'', ... (7 bytes)
+2025-02-06 20:44:30,726 - logfile - DEBUG - MQTT-published: 11
+2025-02-06 20:44:30,726 - logfile - INFO - MQTT-Send `un_init` to topic `GAMECONTROLLER/OUT/STATE`
+2025-02-06 20:44:34,845 - logfile - DEBUG - MQTT-Sending PINGREQ
+2025-02-06 20:44:34,946 - logfile - DEBUG - MQTT-Received PINGRESP
+2025-02-06 20:44:44,887 - logfile - DEBUG - MQTT-Sending PINGREQ
+2025-02-06 20:44:45,088 - logfile - DEBUG - MQTT-Received PINGRESP
+2025-02-06 20:44:54,928 - logfile - DEBUG - MQTT-Sending PINGREQ
+2025-02-06 20:44:55,029 - logfile - DEBUG - MQTT-Received PINGRESP
+2025-02-06 20:45:04,973 - logfile - DEBUG - MQTT-Sending PINGREQ
+2025-02-06 20:45:05,074 - logfile - DEBUG - MQTT-Received PINGRESP
+2025-02-06 20:45:15,018 - logfile - DEBUG - MQTT-Sending PINGREQ
+2025-02-06 20:45:15,119 - logfile - DEBUG - MQTT-Received PINGRESP
+2025-02-06 20:45:25,062 - logfile - DEBUG - MQTT-Sending PINGREQ
+2025-02-06 20:45:25,162 - logfile - DEBUG - MQTT-Received PINGRESP
+2025-02-06 20:45:35,105 - logfile - DEBUG - MQTT-Sending PINGREQ
+2025-02-06 20:45:44,146 - logfile - CRITICAL - rc: 4
+2025-02-06 20:53:29,292 - logfile - DEBUG - MQTT-Sending CONNECT (u0, p0, wr0, wq0, wf0, c1, k10) client_id=b'subscribe-82'
+2025-02-06 20:53:29,293 - logfile - DEBUG - MQTT-Sending SUBSCRIBE (d0, m1) [(b'SPEELBAK1/OUT/#', 0)]
+2025-02-06 20:53:29,293 - logfile - DEBUG - MQTT-Sending SUBSCRIBE (d0, m2) [(b'SPEELBAK2/OUT/#', 0)]
+2025-02-06 20:53:29,293 - logfile - DEBUG - MQTT-Sending SUBSCRIBE (d0, m3) [(b'SPEELBAK3/OUT/#', 0)]
+2025-02-06 20:53:29,294 - logfile - DEBUG - MQTT-Sending SUBSCRIBE (d0, m4) [(b'SPEELBAK4/OUT/#', 0)]
+2025-02-06 20:53:29,294 - logfile - DEBUG - MQTT-Sending SUBSCRIBE (d0, m5) [(b'KNOPPEN/OUT/#', 0)]
+2025-02-06 20:53:29,294 - logfile - DEBUG - MQTT-Sending SUBSCRIBE (d0, m6) [(b'KAMELEN/OUT/#', 0)]
+2025-02-06 20:53:30,237 - logfile - INFO - Starting main while lus.
+2025-02-06 20:53:30,338 - logfile - DEBUG - MQTT-Received CONNACK (0, 0)
+2025-02-06 20:53:30,338 - logfile - INFO - MQTT-rc: 0
+2025-02-06 20:53:30,440 - logfile - DEBUG - MQTT-Received SUBACK
+2025-02-06 20:53:30,440 - logfile - INFO - MQTT-Subscribed: 1 (0,)
+2025-02-06 20:53:30,541 - logfile - DEBUG - MQTT-Received SUBACK
+2025-02-06 20:53:30,541 - logfile - INFO - MQTT-Subscribed: 2 (0,)
+2025-02-06 20:53:30,641 - logfile - DEBUG - MQTT-Received SUBACK
+2025-02-06 20:53:30,641 - logfile - INFO - MQTT-Subscribed: 3 (0,)
+2025-02-06 20:53:30,743 - logfile - DEBUG - MQTT-Received SUBACK
+2025-02-06 20:53:30,743 - logfile - INFO - MQTT-Subscribed: 4 (0,)
+2025-02-06 20:53:30,845 - logfile - DEBUG - MQTT-Received SUBACK
+2025-02-06 20:53:30,845 - logfile - INFO - MQTT-Subscribed: 5 (0,)
+2025-02-06 20:53:30,946 - logfile - DEBUG - MQTT-Received SUBACK
+2025-02-06 20:53:30,946 - logfile - INFO - MQTT-Subscribed: 6 (0,)
+2025-02-06 20:53:39,286 - logfile - DEBUG - MQTT-Sending PINGREQ
+2025-02-06 20:53:39,387 - logfile - DEBUG - MQTT-Received PINGRESP
+2025-02-06 20:53:49,329 - logfile - DEBUG - MQTT-Sending PINGREQ
+2025-02-06 20:53:49,430 - logfile - DEBUG - MQTT-Received PINGRESP
+2025-02-06 20:53:59,373 - logfile - DEBUG - MQTT-Sending PINGREQ
+2025-02-06 20:53:59,473 - logfile - DEBUG - MQTT-Received PINGRESP
+2025-02-06 20:54:09,418 - logfile - DEBUG - MQTT-Sending PINGREQ
+2025-02-06 20:54:09,519 - logfile - DEBUG - MQTT-Received PINGRESP
+2025-02-06 20:54:19,460 - logfile - DEBUG - MQTT-Sending PINGREQ
+2025-02-06 20:54:19,561 - logfile - DEBUG - MQTT-Received PINGRESP
+2025-02-06 20:54:29,503 - logfile - DEBUG - MQTT-Sending PINGREQ
+2025-02-06 20:54:29,603 - logfile - DEBUG - MQTT-Received PINGRESP
+2025-02-06 20:54:39,546 - logfile - DEBUG - MQTT-Sending PINGREQ
+2025-02-06 20:54:39,647 - logfile - DEBUG - MQTT-Received PINGRESP
+2025-02-06 20:54:49,591 - logfile - DEBUG - MQTT-Sending PINGREQ
+2025-02-06 20:54:49,691 - logfile - DEBUG - MQTT-Received PINGRESP
+2025-02-06 20:54:59,633 - logfile - DEBUG - MQTT-Sending PINGREQ
+2025-02-06 20:54:59,733 - logfile - DEBUG - MQTT-Received PINGRESP
+2025-02-06 20:55:09,678 - logfile - DEBUG - MQTT-Sending PINGREQ
+2025-02-06 20:55:09,779 - logfile - DEBUG - MQTT-Received PINGRESP
+2025-02-06 20:55:19,721 - logfile - DEBUG - MQTT-Sending PINGREQ
+2025-02-06 20:55:19,822 - logfile - DEBUG - MQTT-Received PINGRESP
+2025-02-06 20:55:29,766 - logfile - DEBUG - MQTT-Sending PINGREQ
+2025-02-06 20:55:29,867 - logfile - DEBUG - MQTT-Received PINGRESP
+2025-02-06 20:55:39,808 - logfile - DEBUG - MQTT-Sending PINGREQ
+2025-02-06 20:55:39,909 - logfile - DEBUG - MQTT-Received PINGRESP
+2025-02-06 20:55:49,853 - logfile - DEBUG - MQTT-Sending PINGREQ
+2025-02-06 20:55:49,954 - logfile - DEBUG - MQTT-Received PINGRESP
+2025-02-06 20:55:59,898 - logfile - DEBUG - MQTT-Sending PINGREQ
+2025-02-06 20:55:59,999 - logfile - DEBUG - MQTT-Received PINGRESP
+2025-02-06 20:56:09,944 - logfile - DEBUG - MQTT-Sending PINGREQ
+2025-02-06 20:56:10,045 - logfile - DEBUG - MQTT-Received PINGRESP
+2025-02-06 20:56:19,992 - logfile - DEBUG - MQTT-Sending PINGREQ
+2025-02-06 20:56:20,094 - logfile - DEBUG - MQTT-Received PINGRESP
+2025-02-06 20:56:30,037 - logfile - DEBUG - MQTT-Sending PINGREQ
+2025-02-06 20:56:30,138 - logfile - DEBUG - MQTT-Received PINGRESP
+2025-02-06 20:56:40,085 - logfile - DEBUG - MQTT-Sending PINGREQ
+2025-02-06 20:56:50,130 - logfile - CRITICAL - rc: 4

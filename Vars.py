@@ -156,25 +156,37 @@ class myVars:
             self._kameel3_isready = int(value)
         elif( name.endswith("KAMEEL4_ISREADY") ):
             self._kameel4_isready = int(value)
+        elif( name.endswith("KAMELEN/OUT/ISALIVE") ):
+            pass
         elif( name.endswith("KNOPPEN/OUT/CMD") ):
             if(value == "START"): self._start_pressed = True
             if(value == "RESET"): self._reset_pressed = True
+        elif( name.endswith("KNOPPEN/OUT/ISALIVE") ):
+            pass
         elif( name.endswith("SPEELBAK1/OUT/SCORE") ):
             _value = int(value)
             self._speelbak1_hasscored = (_value > self._speelbak1_score)
             self._speelbak1_score = _value
+        elif( name.endswith("SPEELBAK1/OUT/ISALIVE") ):
+            pass
         elif( name.endswith("SPEELBAK2/OUT/SCORE") ):
             _value = int(value)
             self._speelbak2_hasscored = (_value > self._speelbak2_score)
             self._speelbak2_score = _value
+        elif( name.endswith("SPEELBAK2/OUT/ISALIVE") ):
+            pass
         elif( name.endswith("SPEELBAK3/OUT/SCORE") ):
             _value = int(value)
             self._speelbak3_hasscored = (_value > self._speelbak3_score)
             self._speelbak3_score = _value
+        elif( name.endswith("SPEELBAK3/OUT/ISALIVE") ):
+            pass
         elif( name.endswith("SPEELBAK4/OUT/SCORE") ):
             _value = int(value)
             self._speelbak4_hasscored = (_value > self._speelbak4_score)
             self._speelbak4_score = _value
+        elif( name.endswith("SPEELBAK4/OUT/ISALIVE") ):
+            pass
         else:
             #logger.info("MQTT-"+f"Send `{_msg}` to topic `{_topic}`")
             logger.error("Unknown name: "+f"'{name}' '{value}'")

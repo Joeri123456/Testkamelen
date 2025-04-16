@@ -6,9 +6,11 @@ import random
 import paho.mqtt.client as mqtt
 import time
 from config import CONFIG
+from time import sleep
 
 #globalScore = 0
 main = None;
+mqttc = None;
 
 #/KAMELEN/IN/KAMEEL1 [0-100]
 #/KAMELEN/IN/KAMEEL2 [0-100]
@@ -120,7 +122,7 @@ class MyMQTTClass(mqtt.Client):
     def setup(self, name):
         f = None;
         self.mqttname = name;
-        self.connect(CONFIG.MQTTSERVER, CONFIG.MQTTPORT, 60)
+        self.connect(CONFIG.MQTTSERVER, CONFIG.MQTTPORT, 10)
         self.subscribe(self.mqttname+"/IN/#", 0)
 
     def run(self):
@@ -141,6 +143,15 @@ class MyMQTTClass(mqtt.Client):
         else:
             print(f"Failed to send message to topic {topic}")
 
+    def ReplyIsUp(self):
+        topic = self.mqttname+"/OUT/ISALIVE";
+        result = self.publish(topic, "PING")
+        # result: [0, 1]
+        status = result[0]
+        if status == 0:
+            print(f"Send msg to topic `{topic}`")
+        else:
+            print(f"Failed to send message to topic {topic}")
 
 def my_message(name, payload):
     ##reset functionality
@@ -159,7 +170,9 @@ def my_message(name, payload):
     if( name.endswith("KAMEEL4")  ):
         if( (value > -1) & (value < 101) ):
             main.updateScore(4,value)
-
+    if( name.endswith("/SENDALIVE")  ):
+        global mqttc
+        mqttc.ReplyIsUp();
     print(name, payload)
     
 
@@ -188,8 +201,14 @@ if __name__ == "__main__":
     timer3start = 0;
     timer4start = 0;
     while (main.close != 1) & (rc == 0):
+        sleep(0.1)
         root.update();
         rc = mqttc.run();
+        #rc =0
+        #if(rc != 0):
+        #    mqttc.reconnect()
+        #    rc = mqttc.run();
+
         
         if((main.k1_lbl.cget("fg") == "red") ):
             main.k1_lbl.config(fg="orange")

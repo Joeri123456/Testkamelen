@@ -28,7 +28,7 @@ class MyMQTTClass(mqtt.Client):
     def setup(self, name):
         f = None;
         self.mqttname = name;
-        self.connect(CONFIG.MQTTSERVER, CONFIG.MQTTPORT, 60)
+        self.connect(CONFIG.MQTTSERVER, CONFIG.MQTTPORT, 10)
         self.subscribe("SPEELBAK1/OUT/#", 0)
         self.subscribe("SPEELBAK2/OUT/#", 0)
         self.subscribe("SPEELBAK3/OUT/#", 0)

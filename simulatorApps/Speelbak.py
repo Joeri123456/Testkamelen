@@ -4,9 +4,11 @@ import tkinter.scrolledtext as st
 import random
 import paho.mqtt.client as mqtt
 from config import CONFIG
+from time import sleep
 
 globalScore = 0
 main = None;
+mqttc = None;
 
 class MainApplication():
     def __init__(self, master):
@@ -109,7 +111,7 @@ class MyMQTTClass(mqtt.Client):
     def setup(self, name):
         f = None;
         self.mqttname = name;
-        self.connect(CONFIG.MQTTSERVER, CONFIG.MQTTPORT, 60)
+        self.connect(CONFIG.MQTTSERVER, CONFIG.MQTTPORT, 10)
         self.subscribe(self.mqttname+"/IN/#", 0)
 
     def run(self):
@@ -131,6 +133,16 @@ class MyMQTTClass(mqtt.Client):
         else:
             print(f"Failed to send message to topic {topic}")
 
+    def ReplyIsUp(self):
+        topic = self.mqttname+"/OUT/ISALIVE";
+        result = self.publish(topic, "PING")
+        # result: [0, 1]
+        status = result[0]
+        if status == 0:
+            print(f"Send msg to topic `{topic}`")
+        else:
+            print(f"Failed to send message to topic {topic}")
+
 
 def my_message(name, payload):
     ##reset functionality
@@ -141,6 +153,9 @@ def my_message(name, payload):
             globalScore  = 0;
             global main
             main.addScore(0)
+    if( name.endswith("/SENDALIVE")  ):
+        global mqttc
+        mqttc.ReplyIsUp();
     print(name, payload)
     
 
@@ -165,6 +180,7 @@ if __name__ == "__main__":
     rc = 0;
     tscore = 0;
     while (main.close != 1) & (rc == 0):
+        sleep(0.1)
         root.update();
         rc = mqttc.run();
 
