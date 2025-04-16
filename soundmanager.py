@@ -5,13 +5,15 @@ from defines import TUNES
 
 class SoundManager:
     def __init__(self):
+        #pygame.mixer.pre_init(frequency=44100, size=-16, channels=2, buffer=512, devicename="kameel", allowedchanges=5)
+        pygame.mixer.pre_init(buffer=4096);
         pygame.init()
         pygame.mixer.init()
-        print("nr of channels:")
-        print(pygame.mixer.get_num_channels() )
-        pygame.mixer.set_num_channels(50)
-        print("nr of channels:")
-        print(pygame.mixer.get_num_channels() )
+        #print("nr of channels:")
+        #print(pygame.mixer.get_num_channels() )
+        pygame.mixer.set_num_channels(25)
+        #print("nr of channels:")
+        #print(pygame.mixer.get_num_channels() )
         #pygame.mixer.Channel[1].set_volume(1,1)
         self._starttune = pygame.mixer.Sound('./sounds/kamelenrace_lang.wav')
         #self._starttune.set_volume(1)
@@ -92,7 +94,7 @@ class SoundManager:
 if __name__ == "__main__":
     #test class
     sounds = SoundManager();
-    if(True): 
+    if(False): 
         sounds.starttune(TUNES.camelsong);
         sounds.waittunefinished();
         sounds.starttune(TUNES.countdown5);
