@@ -26,6 +26,7 @@ class myVars:
         
         self._winner = 0
         self.maxscore = 100
+        self._scoremultiplier = 2
         self._speelbak1_score = 0
         self._speelbak2_score = 0
         self._speelbak3_score = 0
@@ -35,6 +36,14 @@ class myVars:
         self._speelbak2_hasscored = False
         self._speelbak3_hasscored = False
         self._speelbak4_hasscored = False
+
+    def getmultiplier(self):
+        return self._scoremultiplier
+    def setmultiplier(self, value):
+        self._scoremultiplier = value
+        self.mqttc.publishTopic(self.name+"/OUT/SCOREMULTIPLIER", value)
+    state = property(getmultiplier, setmultiplier, "")
+
 
     def getstate(self):
         return self._state
@@ -129,15 +138,19 @@ class myVars:
 
     def resetspeelbak1(self, value):
         self._speelbak1_score=0
+        self._speelbak1_hasscored=False
         self.mqttc.publishTopic("SPEELBAK1/IN/RESET", value)
     def resetspeelbak2(self, value):
         self._speelbak2_score=0
+        self._speelbak2_hasscored=False
         self.mqttc.publishTopic("SPEELBAK2/IN/RESET", value)
     def resetspeelbak3(self, value):
         self._speelbak3_score=0
+        self._speelbak3_hasscored=False
         self.mqttc.publishTopic("SPEELBAK3/IN/RESET", value)
     def resetspeelbak4(self, value):
         self._speelbak4_score=0
+        self._speelbak4_hasscored=False
         self.mqttc.publishTopic("SPEELBAK4/IN/RESET", value)
 
     def run(self):
@@ -146,8 +159,11 @@ class myVars:
     def my_message(self, name, payload):
         value = str( payload.decode('UTF-8') ) 
 
-        if( name.endswith("GAMECONTROLLER/STATE") ):
+        if( name.endswith("GAMECONTROLLER/IN/STATE") ):
             self._state = value
+        elif( name.endswith("GAMECONTROLLER/IN/SCOREMULTIPLIER") ):
+            logger.info("Received multiplier: "+f"`{value}`")
+            self._state = int(value)
         elif( name.endswith("KAMEEL1_ISREADY") ):
             self._kameel1_isready = int(value)
         elif( name.endswith("KAMEEL2_ISREADY") ):
@@ -164,25 +180,25 @@ class myVars:
         elif( name.endswith("KNOPPEN/OUT/ISALIVE") ):
             pass
         elif( name.endswith("SPEELBAK1/OUT/SCORE") ):
-            _value = int(value)
+            _value = int(int(value)*self._scoremultiplier)
             self._speelbak1_hasscored = (_value > self._speelbak1_score)
             self._speelbak1_score = _value
         elif( name.endswith("SPEELBAK1/OUT/ISALIVE") ):
             pass
         elif( name.endswith("SPEELBAK2/OUT/SCORE") ):
-            _value = int(value)
+            _value = int(int(value)*self._scoremultiplier)
             self._speelbak2_hasscored = (_value > self._speelbak2_score)
             self._speelbak2_score = _value
         elif( name.endswith("SPEELBAK2/OUT/ISALIVE") ):
             pass
         elif( name.endswith("SPEELBAK3/OUT/SCORE") ):
-            _value = int(value)
+            _value = int(int(value)*self._scoremultiplier)
             self._speelbak3_hasscored = (_value > self._speelbak3_score)
             self._speelbak3_score = _value
         elif( name.endswith("SPEELBAK3/OUT/ISALIVE") ):
             pass
         elif( name.endswith("SPEELBAK4/OUT/SCORE") ):
-            _value = int(value)
+            _value = int(int(value)*self._scoremultiplier)
             self._speelbak4_hasscored = (_value > self._speelbak4_score)
             self._speelbak4_score = _value
         elif( name.endswith("SPEELBAK4/OUT/ISALIVE") ):
