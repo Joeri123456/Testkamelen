@@ -37,13 +37,19 @@ class myVars:
         self._speelbak3_hasscored = False
         self._speelbak4_hasscored = False
 
+        self._lastlightcmd = ''
+
+    def setlights(self, value):
+        self._lastlightcmd = value
+        self.mqttc.publishTopic(self.name+"/KAMELEN/IN/LICHT", value)
+    state = property("", setlights, "")
+
     def getmultiplier(self):
         return self._scoremultiplier
     def setmultiplier(self, value):
         self._scoremultiplier = value
         self.mqttc.publishTopic(self.name+"/OUT/SCOREMULTIPLIER", value)
     state = property(getmultiplier, setmultiplier, "")
-
 
     def getstate(self):
         return self._state
@@ -163,7 +169,7 @@ class myVars:
             self._state = value
         elif( name.endswith("GAMECONTROLLER/IN/SCOREMULTIPLIER") ):
             logger.info("Received multiplier: "+f"`{value}`")
-            self._state = int(value)
+            self._scoremultiplier = float(value)
         elif( name.endswith("KAMEEL1_ISREADY") ):
             self._kameel1_isready = int(value)
         elif( name.endswith("KAMEEL2_ISREADY") ):

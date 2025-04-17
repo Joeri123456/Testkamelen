@@ -35,7 +35,7 @@ class MyMQTTClass(mqtt.Client):
         self.subscribe("SPEELBAK4/OUT/#", 0)
         self.subscribe("KNOPPEN/OUT/#", 0)
         self.subscribe("KAMELEN/OUT/#", 0)
-        self.subscribe("GAMECONTROLLER/IN//#", 0)
+        self.subscribe("GAMECONTROLLER/IN/#", 0)
 
     def run(self):
         self.loop_read()

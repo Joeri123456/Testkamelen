@@ -1,5 +1,5 @@
 from Vars import myVars
-from defines import RS, TUNES
+from defines import RS, TUNES,LIGHTS
 from datetime import datetime
 from logging.handlers import RotatingFileHandler
 from soundmanager import SoundManager
@@ -15,6 +15,7 @@ def main():
     dt = 0;
 
     logger.info('Starting main while lus.')
+    vars.setlights(LIGHTS.un_init)
 
     while (rc == 0):
         sleep(0.1)
@@ -26,16 +27,25 @@ def main():
                 if(vars.start_pressed): # wait for start button being pressed.
                     #Home kamelen
                     vars.setkameel1(0)
+                    vars.setlights(LIGHTS.is_initializing_p1)
                     vars.setkameel2(0)
+                    vars.setlights(LIGHTS.is_initializing_p2)
                     vars.setkameel3(0)
+                    vars.setlights(LIGHTS.is_initializing_p3)
                     vars.setkameel4(0)
+                    vars.setlights(LIGHTS.is_initializing_p4)
                     vars.state = RS.is_initializing
 
             case RS.is_initializing: # initializing racer
+                
                 if(vars.kameel1_isready & vars.kameel2_isready & vars.kameel3_isready & vars.kameel4_isready):
                    # all camels initialized.
-                   vars.state = RS.standby
-                   vars.start_pressed 
+                    vars.setlights(LIGHTS.standby_p1)
+                    vars.setlights(LIGHTS.standby_p2)
+                    vars.setlights(LIGHTS.standby_p3)
+                    vars.setlights(LIGHTS.standby_p4)
+                    vars.state = RS.standby
+                    vars.start_pressed 
 
             case RS.standby:
                 if(vars.start_pressed): # wait for start button being pressed.
@@ -44,6 +54,7 @@ def main():
             case RS.countdown5:
                 dt = datetime.now().timestamp() # trigger counter
                 vars.state = RS.waitcountdown5
+                vars.setlights(LIGHTS.countdown5)
                 Sounds.starttune(TUNES.countdown5)
 
             case RS.waitcountdown5:
@@ -53,6 +64,7 @@ def main():
             case RS.countdown4:
                 dt = datetime.now().timestamp() # trigger counter
                 vars.state = RS.waitcountdown4
+                vars.setlights(LIGHTS.countdown4)
                 Sounds.starttune(TUNES.countdown4)
 
             case RS.waitcountdown4:
@@ -62,6 +74,7 @@ def main():
             case RS.countdown3:
                 dt = datetime.now().timestamp() # trigger counter
                 vars.state = RS.waitcountdown3
+                vars.setlights(LIGHTS.countdown3)
                 Sounds.starttune(TUNES.countdown3)
 
             case RS.waitcountdown3:
@@ -71,6 +84,7 @@ def main():
             case RS.countdown2:
                 dt = datetime.now().timestamp() # trigger counter
                 vars.state = RS.waitcountdown2
+                vars.setlights(LIGHTS.countdown2)
                 Sounds.starttune(TUNES.countdown2)
 
             case RS.waitcountdown2:
@@ -80,6 +94,7 @@ def main():
             case RS.countdown1:
                 dt = datetime.now().timestamp() # trigger counter
                 vars.state = RS.waitcountdown1
+                vars.setlights(LIGHTS.countdown1)
                 Sounds.starttune(TUNES.countdown1)
 
             case RS.waitcountdown1:
@@ -89,6 +104,7 @@ def main():
             case RS.countdowngo:
                 dt = datetime.now().timestamp() # trigger counter
                 vars.state = RS.waitcountdowngo 
+                vars.setlights(LIGHTS.countdowngo)
                 Sounds.starttune(TUNES.start)
 
             case RS.waitcountdowngo:
@@ -97,6 +113,7 @@ def main():
                 if( (dt+5) < datetime.now().timestamp() or not Sounds.tuneisplaying()): # wwait for 1 seconds has passed.
                     vars.state = RS.playing # wait for sound to finish.
                     Sounds.starttune(TUNES.camelsong)                
+                    vars.setlights(LIGHTS.playing)
                     vars.resetspeelbak1("NOW")
                     vars.resetspeelbak2("NOW")
                     vars.resetspeelbak3("NOW")
@@ -105,35 +122,56 @@ def main():
 
             case RS.playing:
                 if(vars.speelbak1_score  >= vars.maxscore):
+                    vars.setkameel1(vars.maxscore)
+                    vars.setkameel2(0)
+                    vars.setkameel3(0)
+                    vars.setkameel4(0)
                     vars.winner = 1
                     vars.state = RS.end_P1_win
                 elif(vars.speelbak2_score >= vars.maxscore):
+                    vars.setkameel2(vars.maxscore)
+                    vars.setkameel1(0)
+                    vars.setkameel3(0)
+                    vars.setkameel4(0)
                     vars.winner = 2
                     vars.state = RS.end_P2_win
                 elif(vars.speelbak3_score >= vars.maxscore):
+                    vars.setkameel3(vars.maxscore)
+                    vars.setkameel1(0)
+                    vars.setkameel2(0)
+                    vars.setkameel4(0)
                     vars.winner = 3
                     vars.state = RS.end_P3_win
                 elif(vars.speelbak4_score >= vars.maxscore):
+                    vars.setkameel4(vars.maxscore)
+                    vars.setkameel1(0)
+                    vars.setkameel2(0)
+                    vars.setkameel3(0)    
                     vars.winner = 4
                     vars.state = RS.end_P4_win
-                
-                if(vars.speelbak1_hasscored):
-                    vars.setkameel1(vars.speelbak1_score)
-                    Sounds.starttune(TUNES.punt1)
-                if(vars.speelbak2_hasscored):
-                    vars.setkameel2(vars.speelbak2_score)
-                    Sounds.starttune(TUNES.punt2)
-                if(vars.speelbak3_hasscored):
-                    vars.setkameel3(vars.speelbak3_score)
-                    Sounds.starttune(TUNES.punt3)
-                if(vars.speelbak4_hasscored):
-                    vars.setkameel4(vars.speelbak4_score)
-                    Sounds.starttune(TUNES.punt4)
-                
+                else:
+                    if(vars.speelbak1_hasscored):
+                        vars.setkameel1(vars.speelbak1_score)
+                        vars.setlights(LIGHTS.score_P1_gold)
+                        Sounds.starttune(TUNES.punt1)
+                    if(vars.speelbak2_hasscored):
+                        vars.setkameel2(vars.speelbak2_score)
+                        vars.setlights(LIGHTS.score_P2_gold)
+                        Sounds.starttune(TUNES.punt2)
+                    if(vars.speelbak3_hasscored):
+                        vars.setkameel3(vars.speelbak3_score)
+                        vars.setlights(LIGHTS.score_P3_gold)
+                        Sounds.starttune(TUNES.punt3)
+                    if(vars.speelbak4_hasscored):
+                        vars.setkameel4(vars.speelbak4_score)
+                        vars.setlights(LIGHTS.score_P4_gold)
+                        Sounds.starttune(TUNES.punt4)
+     
             
             case RS.end_P1_win:
                 # set win tune for player
                 dt = datetime.now().timestamp() # trigger counter
+                vars.setlights(LIGHTS.winner_p1)
                 Sounds.starttune(TUNES.winner1)
                 # set animation
                 vars.state = RS.waitwintunefinised
@@ -141,6 +179,7 @@ def main():
             case RS.end_P2_win:
                 # set win tune for player
                 dt = datetime.now().timestamp() # trigger counter
+                vars.setlights(LIGHTS.winner_p2)
                 Sounds.starttune(TUNES.winner2)
                 # set animation
                 vars.state = RS.waitwintunefinised
@@ -148,6 +187,7 @@ def main():
             case RS.end_P3_win:
                 # set win tune for player
                 dt = datetime.now().timestamp() # trigger counter
+                vars.setlights(LIGHTS.winner_p3)
                 Sounds.starttune(TUNES.winner3)
                 # set animation
                 vars.state = RS.waitwintunefinised
@@ -155,6 +195,7 @@ def main():
             case RS.end_P4_win:
                 # set win tune for player
                 dt = datetime.now().timestamp() # trigger counter
+                vars.setlights(LIGHTS.winner_p4)
                 Sounds.starttune(TUNES.winner4)
                 # set animation
                 vars.state = RS.waitwintunefinised
@@ -162,6 +203,9 @@ def main():
             case RS.waitwintunefinised:
                 # if tune finished
                 if( (dt+5) < datetime.now().timestamp() or not Sounds.tuneisplaying()): # wwait for 1 seconds has passed.
+
+                    vars.setlights(LIGHTS.un_init)
+                          
                     vars.state = RS.un_init
                                 
             case _:
@@ -174,6 +218,8 @@ def main():
             vars.resetspeelbak3("NOW")
             vars.resetspeelbak4("NOW")
             vars.state = RS.un_init
+            vars.setlights(LIGHTS.un_init)
+                    
 
     logger.critical("rc: "+str(rc))
 
