@@ -13,6 +13,10 @@ def main():
     Sounds = SoundManager();
     rc = 0;
     dt = 0;
+    onetimetrigger_kameel1_isinitializing = False;
+    onetimetrigger_kameel2_isinitializing = False;
+    onetimetrigger_kameel3_isinitializing = False;
+    onetimetrigger_kameel4_isinitializing = False;
 
     logger.info('Starting main while lus.')
     vars.setlights(LIGHTS.un_init)
@@ -28,22 +32,38 @@ def main():
                     #Home kamelen
                     vars.setkameel1(0)
                     vars.setlights(LIGHTS.is_initializing_p1)
+                    onetimetrigger_kameel1_isinitializing = True;
                     vars.setkameel2(0)
                     vars.setlights(LIGHTS.is_initializing_p2)
+                    onetimetrigger_kameel2_isinitializing = True;
                     vars.setkameel3(0)
                     vars.setlights(LIGHTS.is_initializing_p3)
+                    onetimetrigger_kameel3_isinitializing = True;
                     vars.setkameel4(0)
                     vars.setlights(LIGHTS.is_initializing_p4)
+                    onetimetrigger_kameel4_isinitializing = True;
                     vars.state = RS.is_initializing
 
             case RS.is_initializing: # initializing racer
-                
+                if( onetimetrigger_kameel1_isinitializing & vars.kameel1_isready):
+                    onetimetrigger_kameel1_isinitializing = False;
+                    vars.setlights(LIGHTS.standby_p1)
+                if( onetimetrigger_kameel2_isinitializing & vars.kameel2_isready):
+                    onetimetrigger_kameel2_isinitializing = False;
+                    vars.setlights(LIGHTS.standby_p2)
+                if( onetimetrigger_kameel3_isinitializing & vars.kameel3_isready):
+                    onetimetrigger_kameel3_isinitializing = False;
+                    vars.setlights(LIGHTS.standby_p3)
+                if( onetimetrigger_kameel4_isinitializing & vars.kameel4_isready):
+                    onetimetrigger_kameel4_isinitializing = False;
+                    vars.setlights(LIGHTS.standby_p4)
+
                 if(vars.kameel1_isready & vars.kameel2_isready & vars.kameel3_isready & vars.kameel4_isready):
                    # all camels initialized.
-                    vars.setlights(LIGHTS.standby_p1)
-                    vars.setlights(LIGHTS.standby_p2)
-                    vars.setlights(LIGHTS.standby_p3)
-                    vars.setlights(LIGHTS.standby_p4)
+                    #vars.setlights(LIGHTS.standby_p1)
+                    #vars.setlights(LIGHTS.standby_p2)
+                    #vars.setlights(LIGHTS.standby_p3)
+                    #vars.setlights(LIGHTS.standby_p4)
                     vars.state = RS.standby
                     vars.start_pressed 
 
@@ -150,23 +170,51 @@ def main():
                     vars.winner = 4
                     vars.state = RS.end_P4_win
                 else:
-                    if(vars.speelbak1_hasscored):
+
+                    
+                    temp = vars.speelbak1_hasscored
+                    if(temp>0):
                         vars.setkameel1(vars.speelbak1_score)
-                        vars.setlights(LIGHTS.score_P1_gold)
+                        if(temp == 1):
+                            vars.setlights(LIGHTS.score_P1_blue)
+                        elif(temp == 2):
+                            vars.setlights(LIGHTS.score_P1_orange)
+                        elif(temp==3):
+                            vars.setlights(LIGHTS.score_P1_gold)
                         Sounds.starttune(TUNES.punt1)
-                    if(vars.speelbak2_hasscored):
+
+                    temp = vars.speelbak2_hasscored
+                    if(temp>0):
                         vars.setkameel2(vars.speelbak2_score)
-                        vars.setlights(LIGHTS.score_P2_gold)
+                        if(temp == 1):
+                            vars.setlights(LIGHTS.score_P2_blue)
+                        elif(temp == 2):
+                            vars.setlights(LIGHTS.score_P2_orange)
+                        elif(temp==3):
+                            vars.setlights(LIGHTS.score_P2_gold)
                         Sounds.starttune(TUNES.punt2)
-                    if(vars.speelbak3_hasscored):
+
+                    temp = vars.speelbak3_hasscored
+                    if(temp>0):
                         vars.setkameel3(vars.speelbak3_score)
-                        vars.setlights(LIGHTS.score_P3_gold)
+                        if(temp == 1):
+                            vars.setlights(LIGHTS.score_P3_blue)
+                        elif(temp == 2):
+                            vars.setlights(LIGHTS.score_P3_orange)
+                        elif(temp==3):
+                            vars.setlights(LIGHTS.score_P3_gold)
                         Sounds.starttune(TUNES.punt3)
-                    if(vars.speelbak4_hasscored):
+
+                    temp = vars.speelbak4_hasscored
+                    if(temp>0):
                         vars.setkameel4(vars.speelbak4_score)
-                        vars.setlights(LIGHTS.score_P4_gold)
+                        if(temp == 1):
+                            vars.setlights(LIGHTS.score_P4_blue)
+                        elif(temp == 2):
+                            vars.setlights(LIGHTS.score_P4_orange)
+                        elif(temp==3):
+                            vars.setlights(LIGHTS.score_P4_gold)
                         Sounds.starttune(TUNES.punt4)
-     
             
             case RS.end_P1_win:
                 # set win tune for player

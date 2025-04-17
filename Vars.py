@@ -32,24 +32,24 @@ class myVars:
         self._speelbak3_score = 0
         self._speelbak4_score = 0
 
-        self._speelbak1_hasscored = False
-        self._speelbak2_hasscored = False
-        self._speelbak3_hasscored = False
-        self._speelbak4_hasscored = False
+        self._speelbak1_hasscored = 0
+        self._speelbak2_hasscored = 0
+        self._speelbak3_hasscored = 0
+        self._speelbak4_hasscored = 0
 
         self._lastlightcmd = ''
 
     def setlights(self, value):
         self._lastlightcmd = value
-        self.mqttc.publishTopic(self.name+"/KAMELEN/IN/LICHT", value)
-    state = property("", setlights, "")
+        self.mqttc.publishTopic("KAMELEN/IN/LICHT", value)
+    setlight = property("", setlights, "")
 
     def getmultiplier(self):
         return self._scoremultiplier
     def setmultiplier(self, value):
         self._scoremultiplier = value
         self.mqttc.publishTopic(self.name+"/OUT/SCOREMULTIPLIER", value)
-    state = property(getmultiplier, setmultiplier, "")
+    multiplier = property(getmultiplier, setmultiplier, "")
 
     def getstate(self):
         return self._state
@@ -111,25 +111,25 @@ class myVars:
 
     def getspeelbak1_hasscored(self):
         temp = self._speelbak1_hasscored
-        self._speelbak1_hasscored = False
+        self._speelbak1_hasscored = 0
         return temp
     speelbak1_hasscored = property(getspeelbak1_hasscored, "")
 
     def getspeelbak2_hasscored(self):
         temp = self._speelbak2_hasscored
-        self._speelbak2_hasscored = False
+        self._speelbak2_hasscored = 0
         return temp 
     speelbak2_hasscored = property(getspeelbak2_hasscored, "")
 
     def getspeelbak3_hasscored(self):
         temp = self._speelbak3_hasscored
-        self._speelbak3_hasscored = False
+        self._speelbak3_hasscored = 0
         return temp
     speelbak3_hasscored = property(getspeelbak3_hasscored, "")
 
     def getspeelbak4_hasscored(self):
         temp = self._speelbak4_hasscored
-        self._speelbak4_hasscored = False
+        self._speelbak4_hasscored = 0
         return temp
     speelbak4_hasscored = property(getspeelbak4_hasscored, "")
 
@@ -187,25 +187,97 @@ class myVars:
             pass
         elif( name.endswith("SPEELBAK1/OUT/SCORE") ):
             _value = int(int(value)*self._scoremultiplier)
-            self._speelbak1_hasscored = (_value > self._speelbak1_score)
+            delta = 0
+            if(_value > self._speelbak1_score):
+            #self._speelbak1_hasscored = (_value > self._speelbak1_score)
+            #if(self._speelbak1_hasscored):
+                delta = int((_value - self._speelbak1_score)/self._scoremultiplier)
+                logger.info("added "+f"`{delta}` points. ")
+                if(delta == 6): 
+                    logger.info("added GOLD score")
+                    self._speelbak1_hasscored = 3
+                elif(delta ==3):
+                    logger.info("added ORANGE score")
+                    self._speelbak1_hasscored = 2
+                elif(delta ==1):
+                    logger.info("added BLUE score")
+                    self._speelbak1_hasscored = 1
+            elif(delta == 0):
+                self._speelbak1_hasscored = 0
+            else:
+                self._speelbak1_hasscored = 100
             self._speelbak1_score = _value
         elif( name.endswith("SPEELBAK1/OUT/ISALIVE") ):
             pass
         elif( name.endswith("SPEELBAK2/OUT/SCORE") ):
             _value = int(int(value)*self._scoremultiplier)
-            self._speelbak2_hasscored = (_value > self._speelbak2_score)
+            delta = 0
+            if(_value > self._speelbak2_score):
+            #self._speelbak2_hasscored = (_value > self._speelbak2_score)
+            #if(self._speelbak2_hasscored):
+                delta = int((_value - self._speelbak2_score)/self._scoremultiplier)
+                logger.info("added "+f"`{delta}` points. ")
+                if(delta == 6): 
+                    logger.info("added GOLD score")
+                    self._speelbak2_hasscored = 3
+                elif(delta ==3):
+                    logger.info("added ORANGE score")
+                    self._speelbak2_hasscored = 2
+                elif(delta ==1):
+                    logger.info("added BLUE score")
+                    self._speelbak2_hasscored = 1
+            elif(delta == 0):
+                self._speelbak2_hasscored = 0
+            else:
+                self._speelbak2_hasscored = 100
             self._speelbak2_score = _value
         elif( name.endswith("SPEELBAK2/OUT/ISALIVE") ):
             pass
         elif( name.endswith("SPEELBAK3/OUT/SCORE") ):
             _value = int(int(value)*self._scoremultiplier)
-            self._speelbak3_hasscored = (_value > self._speelbak3_score)
+            delta = 0
+            if(_value > self._speelbak3_score):
+                #self._speelbak3_hasscored = (_value > self._speelbak3_score)
+                #if(self._speelbak3_hasscored):
+                delta = int((_value - self._speelbak3_score)/self._scoremultiplier)
+                logger.info("added "+f"`{delta}` points. ")
+                if(delta == 6): 
+                    logger.info("added GOLD score")
+                    self._speelbak3_hasscored = 3
+                elif(delta ==3):
+                    logger.info("added ORANGE score")
+                    self._speelbak3_hasscored = 2
+                elif(delta ==1):
+                    logger.info("added BLUE score")
+                    self._speelbak3_hasscored = 1
+            elif(delta == 0):
+                self._speelbak3_hasscored = 0
+            else:
+                self._speelbak3_hasscored = 100
             self._speelbak3_score = _value
         elif( name.endswith("SPEELBAK3/OUT/ISALIVE") ):
             pass
         elif( name.endswith("SPEELBAK4/OUT/SCORE") ):
             _value = int(int(value)*self._scoremultiplier)
-            self._speelbak4_hasscored = (_value > self._speelbak4_score)
+            delta = 0
+            if(_value > self._speelbak1_score):
+            #self._speelbak4_hasscored = (_value > self._speelbak4_score)
+            #if(self._speelbak4_hasscored):
+                delta = int((_value - self._speelbak4_score)/self._scoremultiplier)
+                logger.info("added "+f"`{delta}` points. ")
+                if(delta == 6): 
+                    logger.info("added GOLD score")
+                    self._speelbak4_hasscored = 3
+                elif(delta ==3):
+                    logger.info("added ORANGE score")
+                    self._speelbak4_hasscored = 2
+                elif(delta ==1):
+                    logger.info("added BLUE score")
+                    self._speelbak4_hasscored = 1
+            elif(delta == 0):
+                self._speelbak4_hasscored = 0
+            else:
+                self._speelbak4_hasscored = 100
             self._speelbak4_score = _value
         elif( name.endswith("SPEELBAK4/OUT/ISALIVE") ):
             pass
