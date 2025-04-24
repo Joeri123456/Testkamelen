@@ -10,6 +10,7 @@ logger = logging.getLogger("logfile")
 
 def main():
     vars = myVars();
+    vars.setmultiplier(5);
     Sounds = SoundManager();
     rc = 0;
     dt = 0;
@@ -21,9 +22,11 @@ def main():
     logger.info('Starting main while lus.')
     vars.setlights(LIGHTS.un_init)
 
-    while (rc == 0):
+    while (True):
         sleep(0.1)
         rc = vars.run();
+        if(rc != 0):
+            logger.critical("rc: "+str(rc))
         #RS.countdown1
         # statemachine loop
         match vars.state:
@@ -267,6 +270,7 @@ def main():
             vars.resetspeelbak4("NOW")
             vars.state = RS.un_init
             vars.setlights(LIGHTS.un_init)
+            Sounds.stoptunes();
                     
 
     logger.critical("rc: "+str(rc))
