@@ -68,7 +68,7 @@ def main():
                     #vars.setlights(LIGHTS.standby_p3)
                     #vars.setlights(LIGHTS.standby_p4)
                     vars.state = RS.standby
-                    vars.start_pressed 
+                    vars.start_pressed; # clear the start button pressed prior to this moment.
 
             case RS.standby:
                 if(vars.start_pressed): # wait for start button being pressed.
@@ -81,7 +81,7 @@ def main():
                 Sounds.starttune(TUNES.countdown5)
 
             case RS.waitcountdown5:
-                if( (dt+5) < datetime.now().timestamp() or not Sounds.tuneisplaying() ): # wait for 1 seconds has passed.
+                if( (dt+1) < datetime.now().timestamp() or not Sounds.tuneisplaying() ): # wait for 1 seconds has passed.
                     vars.state = RS.countdown4
                      
             case RS.countdown4:
@@ -91,7 +91,7 @@ def main():
                 Sounds.starttune(TUNES.countdown4)
 
             case RS.waitcountdown4:
-                if( (dt+5) < datetime.now().timestamp() or not Sounds.tuneisplaying()): # wait for 1 seconds has passed.
+                if( (dt+2) < datetime.now().timestamp() or not Sounds.tuneisplaying()): # wait for 1 seconds has passed.
                     vars.state = RS.countdown3
                                                    
             case RS.countdown3:
@@ -101,7 +101,7 @@ def main():
                 Sounds.starttune(TUNES.countdown3)
 
             case RS.waitcountdown3:
-                if( (dt+5) < datetime.now().timestamp() or not Sounds.tuneisplaying()): # wait for 1 seconds has passeded.
+                if( (dt+3) < datetime.now().timestamp() or not Sounds.tuneisplaying()): # wait for 1 seconds has passeded.
                     vars.state = RS.countdown2
                      
             case RS.countdown2:
@@ -111,7 +111,7 @@ def main():
                 Sounds.starttune(TUNES.countdown2)
 
             case RS.waitcountdown2:
-                if( (dt+5) < datetime.now().timestamp() or not Sounds.tuneisplaying()): # wait for 1 seconds has passed.
+                if( (dt+4) < datetime.now().timestamp() or not Sounds.tuneisplaying()): # wait for 1 seconds has passed.
                     vars.state = RS.countdown1                    
                      
             case RS.countdown1:
@@ -254,10 +254,13 @@ def main():
             case RS.waitwintunefinised:
                 # if tune finished
                 if( (dt+5) < datetime.now().timestamp() or not Sounds.tuneisplaying()): # wwait for 1 seconds has passed.
+                    # and robots finished moving
+                    if(vars.kameel1_isready & vars.kameel2_isready & vars.kameel3_isready & vars.kameel4_isready):
+                        #  go to the uninitialized state
 
-                    vars.setlights(LIGHTS.un_init)
+                        vars.setlights(LIGHTS.un_init)
                           
-                    vars.state = RS.un_init
+                        vars.state = RS.un_init
                                 
             case _:
                 print("Unhandled statemachine state", vars.state)

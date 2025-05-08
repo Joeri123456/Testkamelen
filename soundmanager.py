@@ -37,7 +37,7 @@ class SoundManager:
     def starttune(self, tunename):
         match tunename:
             case TUNES.camelsong:
-                pygame.mixer.Channel(1).set_volume(0.3)
+                pygame.mixer.Channel(1).set_volume(0.5)
                 pygame.mixer.Channel(1).play(self._starttune)
                 #self._starttune.play()
             case TUNES.countdown5:

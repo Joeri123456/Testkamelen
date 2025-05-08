@@ -134,12 +134,16 @@ class myVars:
     speelbak4_hasscored = property(getspeelbak4_hasscored, "")
 
     def setkameel1(self, value):
+        self._kameel1_isready = 0
         self.mqttc.publishTopic("KAMELEN/IN/KAMEEL1", value)
     def setkameel2(self, value):
+        self._kameel2_isready = 0
         self.mqttc.publishTopic("KAMELEN/IN/KAMEEL2", value)
     def setkameel3(self, value):
+        self._kameel3_isready = 0
         self.mqttc.publishTopic("KAMELEN/IN/KAMEEL3", value)
     def setkameel4(self, value):
+        self._kameel4_isready = 0
         self.mqttc.publishTopic("KAMELEN/IN/KAMEEL4", value)
 
     def resetspeelbak1(self, value):
@@ -170,6 +174,7 @@ class myVars:
         elif( name.endswith("GAMECONTROLLER/IN/SCOREMULTIPLIER") ):
             logger.info("Received multiplier: "+f"`{value}`")
             self._scoremultiplier = float(value)
+            self.setmultiplier(self._scoremultiplier);
         elif( name.endswith("KAMEEL1_ISREADY") ):
             self._kameel1_isready = int(value)
         elif( name.endswith("KAMEEL2_ISREADY") ):

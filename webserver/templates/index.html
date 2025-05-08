@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>MQTT Live Tekstvak</title>
+    <script src="{{ url_for('static', filename='socket.io.min.js') }}"></script>
+    <!--<script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>-->
+</head>
+<body>
+    <h1>MQTT → Live Tekstvak</h1>
+    
+    <label>Status:</label><br>
+    <input type="text" id="tekstvak" readonly><br><br>
+
+    <button onclick="stuurReset()">Stuur RESET</button>
+    <button onclick="stuurStart()">Stuur START</button>
+    <br><br>
+    <label>Voer een getal in (1-20):</label>
+    <input type="number" id="getalInput" min="1" max="20">
+    <button onclick="verstuurGetal()">Verstuur Getal</button><br><br>
+
+    <label>Bevestigd getal van server:</label>
+    <input type="text" id="bevestigdGetal" readonly>
+
+    <script>
+        const socket = io();
+
+        socket.on('connect', () => {
+            console.log('Verbonden met server via WebSocket');
+        });
+
+        socket.on('update_tekst', (data) => {
+            document.getElementById('tekstvak').value = data.tekst;
+        });
+
+        socket.on('bevestigd_getal', (data) => {
+            document.getElementById("bevestigdGetal").value = data.waarde;
+        });
+
+        function stuurReset() {
+            socket.emit('reset');
+        }
+
+        function stuurStart() {
+            socket.emit('start');
+        }
+
+        function verstuurGetal() {
+            const waarde = parseInt(document.getElementById("getalInput").value);
+            if (waarde >= 1 && waarde <= 20) {
+                socket.emit('nieuw_getal', { getal: waarde });
+            } else {
+                alert("Voer een getal in tussen 1 en 20.");
+            }
+        }
+
+    </script>
+</body>
+</html>
