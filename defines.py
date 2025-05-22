@@ -63,9 +63,9 @@ BITES.punt3 = "./sounds/punt3.wav";
 BITES.punt4 = "./sounds/punt4.wav";
 #BITES.punt4 = "./sounds/anne_yes_lekker.wav";
 #BITES.punt4 = "./sounds/Voicy_Say3-zombie.wav";
-BITES.winner1 = "./sounds/winner1.wav";
-BITES.winner2 = "./sounds/winner2.wav";
-BITES.winner3 = "./sounds/winner3.wav";
+BITES.winner1 = "./sounds/winner4.wav";
+BITES.winner2 = "./sounds/winner4.wav";
+BITES.winner3 = "./sounds/winner4.wav";
 BITES.winner4 = "./sounds/winner4.wav";
 
 
