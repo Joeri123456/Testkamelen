@@ -10,7 +10,7 @@ logger = logging.getLogger("logfile")
 
 def main():
     vars = myVars();
-    vars.setmultiplier(5);
+    vars.setmultiplier(2);
     Sounds = SoundManager();
     rc = 0;
     dt = 0;
@@ -27,6 +27,7 @@ def main():
         rc = vars.run();
         if(rc != 0):
             logger.critical("rc: "+str(rc))
+            exit(5)
         #RS.countdown1
         # statemachine loop
         match vars.state:

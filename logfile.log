@@ -36436,3 +36436,586 @@
 2025-05-08 20:32:18,062 - logfile - DEBUG - MQTT-Received PINGRESP
 2025-05-08 20:32:28,008 - logfile - DEBUG - MQTT-Sending PINGREQ
 2025-05-08 20:32:28,109 - logfile - DEBUG - MQTT-Received PINGRESP
+2025-05-08 20:32:38,054 - logfile - DEBUG - MQTT-Sending PINGREQ
+2025-05-08 20:32:38,155 - logfile - DEBUG - MQTT-Received PINGRESP
+2025-05-08 20:32:39,560 - logfile - DEBUG - MQTT-Received PUBLISH (d0, q0, r0, m0), 'KAMELEN/OUT/KAMEEL1_ISREADY', ...  (1 bytes)
+2025-05-08 20:32:39,560 - logfile - DEBUG - MQTT-KAMELEN/OUT/KAMEEL1_ISREADY 0 b'0'
+2025-05-08 20:32:39,560 - logfile - INFO - received message: 'KAMELEN/OUT/KAMEEL1_ISREADY' '0'
+2025-05-08 20:32:39,662 - logfile - DEBUG - MQTT-Received PUBLISH (d0, q0, r0, m0), 'KAMELEN/OUT/KAMEEL2_ISREADY', ...  (1 bytes)
+2025-05-08 20:32:39,662 - logfile - DEBUG - MQTT-KAMELEN/OUT/KAMEEL2_ISREADY 0 b'0'
+2025-05-08 20:32:39,662 - logfile - INFO - received message: 'KAMELEN/OUT/KAMEEL2_ISREADY' '0'
+2025-05-08 20:32:39,763 - logfile - DEBUG - MQTT-Received PUBLISH (d0, q0, r0, m0), 'KAMELEN/OUT/KAMEEL3_ISREADY', ...  (1 bytes)
+2025-05-08 20:32:39,763 - logfile - DEBUG - MQTT-KAMELEN/OUT/KAMEEL3_ISREADY 0 b'0'
+2025-05-08 20:32:39,763 - logfile - INFO - received message: 'KAMELEN/OUT/KAMEEL3_ISREADY' '0'
+2025-05-08 20:32:39,864 - logfile - DEBUG - MQTT-Received PUBLISH (d0, q0, r0, m0), 'KAMELEN/OUT/KAMEEL4_ISREADY', ...  (1 bytes)
+2025-05-08 20:32:39,864 - logfile - DEBUG - MQTT-KAMELEN/OUT/KAMEEL4_ISREADY 0 b'0'
+2025-05-08 20:32:39,864 - logfile - INFO - received message: 'KAMELEN/OUT/KAMEEL4_ISREADY' '0'
+2025-05-08 20:32:40,669 - logfile - DEBUG - MQTT-Received PUBLISH (d0, q0, r0, m0), 'KAMELEN/OUT/KAMEEL1_ISREADY', ...  (1 bytes)
+2025-05-08 20:32:40,669 - logfile - DEBUG - MQTT-KAMELEN/OUT/KAMEEL1_ISREADY 0 b'1'
+2025-05-08 20:32:40,669 - logfile - INFO - received message: 'KAMELEN/OUT/KAMEEL1_ISREADY' '1'
+2025-05-08 20:32:40,771 - logfile - DEBUG - MQTT-Received PUBLISH (d0, q0, r0, m0), 'KAMELEN/OUT/KAMEEL2_ISREADY', ...  (1 bytes)
+2025-05-08 20:32:40,771 - logfile - DEBUG - MQTT-KAMELEN/OUT/KAMEEL2_ISREADY 0 b'1'
+2025-05-08 20:32:40,771 - logfile - INFO - received message: 'KAMELEN/OUT/KAMEEL2_ISREADY' '1'
+2025-05-08 20:32:40,873 - logfile - DEBUG - MQTT-Received PUBLISH (d0, q0, r0, m0), 'KAMELEN/OUT/KAMEEL3_ISREADY', ...  (1 bytes)
+2025-05-08 20:32:40,873 - logfile - DEBUG - MQTT-KAMELEN/OUT/KAMEEL3_ISREADY 0 b'1'
+2025-05-08 20:32:40,874 - logfile - INFO - received message: 'KAMELEN/OUT/KAMEEL3_ISREADY' '1'
+2025-05-08 20:32:40,975 - logfile - DEBUG - MQTT-Received PUBLISH (d0, q0, r0, m0), 'KAMELEN/OUT/KAMEEL4_ISREADY', ...  (1 bytes)
+2025-05-08 20:32:40,975 - logfile - DEBUG - MQTT-KAMELEN/OUT/KAMEEL4_ISREADY 0 b'1'
+2025-05-08 20:32:40,975 - logfile - INFO - received message: 'KAMELEN/OUT/KAMEEL4_ISREADY' '1'
+2025-05-08 20:32:48,106 - logfile - DEBUG - MQTT-Sending PINGREQ
+2025-05-08 20:32:48,207 - logfile - DEBUG - MQTT-Received PINGRESP
+2025-05-08 20:32:58,152 - logfile - DEBUG - MQTT-Sending PINGREQ
+2025-05-08 20:32:58,253 - logfile - DEBUG - MQTT-Received PINGRESP
+2025-05-08 20:33:08,197 - logfile - DEBUG - MQTT-Sending PINGREQ
+2025-05-08 20:33:08,298 - logfile - DEBUG - MQTT-Received PINGRESP
+2025-05-08 20:33:18,244 - logfile - DEBUG - MQTT-Sending PINGREQ
+2025-05-08 20:33:18,344 - logfile - DEBUG - MQTT-Received PINGRESP
+2025-05-08 20:33:28,288 - logfile - DEBUG - MQTT-Sending PINGREQ
+2025-05-08 20:33:28,389 - logfile - DEBUG - MQTT-Received PINGRESP
+2025-05-08 20:33:34,415 - logfile - DEBUG - MQTT-Received PUBLISH (d0, q0, r0, m0), 'KAMELEN/OUT/KAMEEL1_ISREADY', ...  (1 bytes)
+2025-05-08 20:33:34,415 - logfile - DEBUG - MQTT-KAMELEN/OUT/KAMEEL1_ISREADY 0 b'0'
+2025-05-08 20:33:34,415 - logfile - INFO - received message: 'KAMELEN/OUT/KAMEEL1_ISREADY' '0'
+2025-05-08 20:33:34,516 - logfile - DEBUG - MQTT-Received PUBLISH (d0, q0, r0, m0), 'KAMELEN/OUT/KAMEEL2_ISREADY', ...  (1 bytes)
+2025-05-08 20:33:34,516 - logfile - DEBUG - MQTT-KAMELEN/OUT/KAMEEL2_ISREADY 0 b'0'
+2025-05-08 20:33:34,516 - logfile - INFO - received message: 'KAMELEN/OUT/KAMEEL2_ISREADY' '0'
+2025-05-08 20:33:34,618 - logfile - DEBUG - MQTT-Received PUBLISH (d0, q0, r0, m0), 'KAMELEN/OUT/KAMEEL3_ISREADY', ...  (1 bytes)
+2025-05-08 20:33:34,618 - logfile - DEBUG - MQTT-KAMELEN/OUT/KAMEEL3_ISREADY 0 b'0'
+2025-05-08 20:33:34,618 - logfile - INFO - received message: 'KAMELEN/OUT/KAMEEL3_ISREADY' '0'
+2025-05-08 20:33:34,719 - logfile - DEBUG - MQTT-Received PUBLISH (d0, q0, r0, m0), 'KAMELEN/OUT/KAMEEL4_ISREADY', ...  (1 bytes)
+2025-05-08 20:33:34,719 - logfile - DEBUG - MQTT-KAMELEN/OUT/KAMEEL4_ISREADY 0 b'0'
+2025-05-08 20:33:34,720 - logfile - INFO - received message: 'KAMELEN/OUT/KAMEEL4_ISREADY' '0'
+2025-05-08 20:33:35,625 - logfile - DEBUG - MQTT-Received PUBLISH (d0, q0, r0, m0), 'KAMELEN/OUT/KAMEEL1_ISREADY', ...  (1 bytes)
+2025-05-08 20:33:35,625 - logfile - DEBUG - MQTT-KAMELEN/OUT/KAMEEL1_ISREADY 0 b'1'
+2025-05-08 20:33:35,625 - logfile - INFO - received message: 'KAMELEN/OUT/KAMEEL1_ISREADY' '1'
+2025-05-08 20:33:35,726 - logfile - DEBUG - MQTT-Received PUBLISH (d0, q0, r0, m0), 'KAMELEN/OUT/KAMEEL2_ISREADY', ...  (1 bytes)
+2025-05-08 20:33:35,726 - logfile - DEBUG - MQTT-KAMELEN/OUT/KAMEEL2_ISREADY 0 b'1'
+2025-05-08 20:33:35,727 - logfile - INFO - received message: 'KAMELEN/OUT/KAMEEL2_ISREADY' '1'
+2025-05-08 20:33:35,827 - logfile - DEBUG - MQTT-Received PUBLISH (d0, q0, r0, m0), 'KAMELEN/OUT/KAMEEL3_ISREADY', ...  (1 bytes)
+2025-05-08 20:33:35,827 - logfile - DEBUG - MQTT-KAMELEN/OUT/KAMEEL3_ISREADY 0 b'1'
+2025-05-08 20:33:35,827 - logfile - INFO - received message: 'KAMELEN/OUT/KAMEEL3_ISREADY' '1'
+2025-05-08 20:33:35,929 - logfile - DEBUG - MQTT-Received PUBLISH (d0, q0, r0, m0), 'KAMELEN/OUT/KAMEEL4_ISREADY', ...  (1 bytes)
+2025-05-08 20:33:35,929 - logfile - DEBUG - MQTT-KAMELEN/OUT/KAMEEL4_ISREADY 0 b'1'
+2025-05-08 20:33:35,929 - logfile - INFO - received message: 'KAMELEN/OUT/KAMEEL4_ISREADY' '1'
+2025-05-08 20:33:36,935 - logfile - DEBUG - MQTT-Received PUBLISH (d0, q0, r0, m0), 'KNOPPEN/OUT/CMD', ...  (5 bytes)
+2025-05-08 20:33:36,935 - logfile - DEBUG - MQTT-KNOPPEN/OUT/CMD 0 b'RESET'
+2025-05-08 20:33:36,935 - logfile - INFO - received message: 'KNOPPEN/OUT/CMD' 'RESET'
+2025-05-08 20:33:36,936 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m461), 'b'SPEELBAK1/IN/RESET'', ... (3 bytes)
+2025-05-08 20:33:36,936 - logfile - DEBUG - MQTT-published: 461
+2025-05-08 20:33:36,937 - logfile - INFO - MQTT-Send `NOW` to topic `SPEELBAK1/IN/RESET`
+2025-05-08 20:33:36,937 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m462), 'b'SPEELBAK2/IN/RESET'', ... (3 bytes)
+2025-05-08 20:33:36,938 - logfile - DEBUG - MQTT-published: 462
+2025-05-08 20:33:36,938 - logfile - INFO - MQTT-Send `NOW` to topic `SPEELBAK2/IN/RESET`
+2025-05-08 20:33:36,939 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m463), 'b'SPEELBAK3/IN/RESET'', ... (3 bytes)
+2025-05-08 20:33:36,939 - logfile - DEBUG - MQTT-published: 463
+2025-05-08 20:33:36,939 - logfile - INFO - MQTT-Send `NOW` to topic `SPEELBAK3/IN/RESET`
+2025-05-08 20:33:36,940 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m464), 'b'SPEELBAK4/IN/RESET'', ... (3 bytes)
+2025-05-08 20:33:36,940 - logfile - DEBUG - MQTT-published: 464
+2025-05-08 20:33:36,940 - logfile - INFO - MQTT-Send `NOW` to topic `SPEELBAK4/IN/RESET`
+2025-05-08 20:33:36,940 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m465), 'b'GAMECONTROLLER/OUT/STATE'', ... (7 bytes)
+2025-05-08 20:33:36,941 - logfile - DEBUG - MQTT-published: 465
+2025-05-08 20:33:36,941 - logfile - INFO - MQTT-Send `un_init` to topic `GAMECONTROLLER/OUT/STATE`
+2025-05-08 20:33:36,941 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m466), 'b'KAMELEN/IN/LICHT'', ... (7 bytes)
+2025-05-08 20:33:36,941 - logfile - DEBUG - MQTT-published: 466
+2025-05-08 20:33:36,941 - logfile - INFO - MQTT-Send `un_init` to topic `KAMELEN/IN/LICHT`
+2025-05-08 20:33:37,142 - logfile - DEBUG - MQTT-Received PUBLISH (d0, q0, r0, m0), 'SPEELBAK1/OUT/SCORE', ...  (1 bytes)
+2025-05-08 20:33:37,143 - logfile - DEBUG - MQTT-SPEELBAK1/OUT/SCORE 0 b'0'
+2025-05-08 20:33:37,143 - logfile - INFO - received message: 'SPEELBAK1/OUT/SCORE' '0'
+2025-05-08 20:33:37,344 - logfile - DEBUG - MQTT-Received PUBLISH (d0, q0, r0, m0), 'SPEELBAK4/OUT/SCORE', ...  (1 bytes)
+2025-05-08 20:33:37,344 - logfile - DEBUG - MQTT-SPEELBAK4/OUT/SCORE 0 b'0'
+2025-05-08 20:33:37,345 - logfile - INFO - received message: 'SPEELBAK4/OUT/SCORE' '0'
+2025-05-08 20:33:37,447 - logfile - DEBUG - MQTT-Received PUBLISH (d0, q0, r0, m0), 'SPEELBAK2/OUT/SCORE', ...  (1 bytes)
+2025-05-08 20:33:37,447 - logfile - DEBUG - MQTT-SPEELBAK2/OUT/SCORE 0 b'0'
+2025-05-08 20:33:37,447 - logfile - INFO - received message: 'SPEELBAK2/OUT/SCORE' '0'
+2025-05-08 20:33:37,548 - logfile - DEBUG - MQTT-Received PUBLISH (d0, q0, r0, m0), 'SPEELBAK3/OUT/SCORE', ...  (1 bytes)
+2025-05-08 20:33:37,548 - logfile - DEBUG - MQTT-SPEELBAK3/OUT/SCORE 0 b'0'
+2025-05-08 20:33:37,548 - logfile - INFO - received message: 'SPEELBAK3/OUT/SCORE' '0'
+2025-05-08 20:33:38,251 - logfile - DEBUG - MQTT-Received PUBLISH (d0, q0, r0, m0), 'KNOPPEN/OUT/CMD', ...  (5 bytes)
+2025-05-08 20:33:38,251 - logfile - DEBUG - MQTT-KNOPPEN/OUT/CMD 0 b'START'
+2025-05-08 20:33:38,251 - logfile - INFO - received message: 'KNOPPEN/OUT/CMD' 'START'
+2025-05-08 20:33:38,251 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m467), 'b'KAMELEN/IN/KAMEEL1'', ... (1 bytes)
+2025-05-08 20:33:38,252 - logfile - DEBUG - MQTT-published: 467
+2025-05-08 20:33:38,252 - logfile - INFO - MQTT-Send `0` to topic `KAMELEN/IN/KAMEEL1`
+2025-05-08 20:33:38,253 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m468), 'b'KAMELEN/IN/LICHT'', ... (18 bytes)
+2025-05-08 20:33:38,253 - logfile - DEBUG - MQTT-published: 468
+2025-05-08 20:33:38,253 - logfile - INFO - MQTT-Send `is_initializing_p1` to topic `KAMELEN/IN/LICHT`
+2025-05-08 20:33:38,253 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m469), 'b'KAMELEN/IN/KAMEEL2'', ... (1 bytes)
+2025-05-08 20:33:38,253 - logfile - DEBUG - MQTT-published: 469
+2025-05-08 20:33:38,253 - logfile - INFO - MQTT-Send `0` to topic `KAMELEN/IN/KAMEEL2`
+2025-05-08 20:33:38,253 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m470), 'b'KAMELEN/IN/LICHT'', ... (18 bytes)
+2025-05-08 20:33:38,253 - logfile - DEBUG - MQTT-published: 470
+2025-05-08 20:33:38,255 - logfile - INFO - MQTT-Send `is_initializing_p2` to topic `KAMELEN/IN/LICHT`
+2025-05-08 20:33:38,255 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m471), 'b'KAMELEN/IN/KAMEEL3'', ... (1 bytes)
+2025-05-08 20:33:38,255 - logfile - DEBUG - MQTT-published: 471
+2025-05-08 20:33:38,256 - logfile - INFO - MQTT-Send `0` to topic `KAMELEN/IN/KAMEEL3`
+2025-05-08 20:33:38,256 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m472), 'b'KAMELEN/IN/LICHT'', ... (18 bytes)
+2025-05-08 20:33:38,256 - logfile - DEBUG - MQTT-published: 472
+2025-05-08 20:33:38,256 - logfile - INFO - MQTT-Send `is_initializing_p3` to topic `KAMELEN/IN/LICHT`
+2025-05-08 20:33:38,256 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m473), 'b'KAMELEN/IN/KAMEEL4'', ... (1 bytes)
+2025-05-08 20:33:38,257 - logfile - DEBUG - MQTT-published: 473
+2025-05-08 20:33:38,257 - logfile - INFO - MQTT-Send `0` to topic `KAMELEN/IN/KAMEEL4`
+2025-05-08 20:33:38,257 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m474), 'b'KAMELEN/IN/LICHT'', ... (18 bytes)
+2025-05-08 20:33:38,257 - logfile - DEBUG - MQTT-published: 474
+2025-05-08 20:33:38,257 - logfile - INFO - MQTT-Send `is_initializing_p4` to topic `KAMELEN/IN/LICHT`
+2025-05-08 20:33:38,258 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m475), 'b'GAMECONTROLLER/OUT/STATE'', ... (15 bytes)
+2025-05-08 20:33:38,258 - logfile - DEBUG - MQTT-published: 475
+2025-05-08 20:33:38,258 - logfile - INFO - MQTT-Send `is_initializing` to topic `GAMECONTROLLER/OUT/STATE`
+2025-05-08 20:33:38,359 - logfile - DEBUG - MQTT-Received PUBLISH (d0, q0, r0, m0), 'KAMELEN/OUT/KAMEEL1_ISREADY', ...  (1 bytes)
+2025-05-08 20:33:38,359 - logfile - DEBUG - MQTT-KAMELEN/OUT/KAMEEL1_ISREADY 0 b'0'
+2025-05-08 20:33:38,359 - logfile - INFO - received message: 'KAMELEN/OUT/KAMEEL1_ISREADY' '0'
+2025-05-08 20:33:38,360 - logfile - DEBUG - MQTT-Sending PINGREQ
+2025-05-08 20:33:38,461 - logfile - DEBUG - MQTT-Received PUBLISH (d0, q0, r0, m0), 'KAMELEN/OUT/KAMEEL1_ISREADY', ...  (1 bytes)
+2025-05-08 20:33:38,461 - logfile - DEBUG - MQTT-KAMELEN/OUT/KAMEEL1_ISREADY 0 b'1'
+2025-05-08 20:33:38,462 - logfile - INFO - received message: 'KAMELEN/OUT/KAMEEL1_ISREADY' '1'
+2025-05-08 20:33:38,462 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m476), 'b'KAMELEN/IN/LICHT'', ... (10 bytes)
+2025-05-08 20:33:38,462 - logfile - DEBUG - MQTT-published: 476
+2025-05-08 20:33:38,464 - logfile - INFO - MQTT-Send `standby_p1` to topic `KAMELEN/IN/LICHT`
+2025-05-08 20:33:38,565 - logfile - DEBUG - MQTT-Received PUBLISH (d0, q0, r0, m0), 'KAMELEN/OUT/KAMEEL2_ISREADY', ...  (1 bytes)
+2025-05-08 20:33:38,565 - logfile - DEBUG - MQTT-KAMELEN/OUT/KAMEEL2_ISREADY 0 b'0'
+2025-05-08 20:33:38,565 - logfile - INFO - received message: 'KAMELEN/OUT/KAMEEL2_ISREADY' '0'
+2025-05-08 20:33:38,666 - logfile - DEBUG - MQTT-Received PUBLISH (d0, q0, r0, m0), 'KAMELEN/OUT/KAMEEL2_ISREADY', ...  (1 bytes)
+2025-05-08 20:33:38,666 - logfile - DEBUG - MQTT-KAMELEN/OUT/KAMEEL2_ISREADY 0 b'1'
+2025-05-08 20:33:38,666 - logfile - INFO - received message: 'KAMELEN/OUT/KAMEEL2_ISREADY' '1'
+2025-05-08 20:33:38,666 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m477), 'b'KAMELEN/IN/LICHT'', ... (10 bytes)
+2025-05-08 20:33:38,667 - logfile - DEBUG - MQTT-published: 477
+2025-05-08 20:33:38,667 - logfile - INFO - MQTT-Send `standby_p2` to topic `KAMELEN/IN/LICHT`
+2025-05-08 20:33:38,769 - logfile - DEBUG - MQTT-Received PUBLISH (d0, q0, r0, m0), 'KAMELEN/OUT/KAMEEL3_ISREADY', ...  (1 bytes)
+2025-05-08 20:33:38,769 - logfile - DEBUG - MQTT-KAMELEN/OUT/KAMEEL3_ISREADY 0 b'0'
+2025-05-08 20:33:38,769 - logfile - INFO - received message: 'KAMELEN/OUT/KAMEEL3_ISREADY' '0'
+2025-05-08 20:33:38,869 - logfile - DEBUG - MQTT-Received PUBLISH (d0, q0, r0, m0), 'KAMELEN/OUT/KAMEEL3_ISREADY', ...  (1 bytes)
+2025-05-08 20:33:38,869 - logfile - DEBUG - MQTT-KAMELEN/OUT/KAMEEL3_ISREADY 0 b'1'
+2025-05-08 20:33:38,869 - logfile - INFO - received message: 'KAMELEN/OUT/KAMEEL3_ISREADY' '1'
+2025-05-08 20:33:38,869 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m478), 'b'KAMELEN/IN/LICHT'', ... (10 bytes)
+2025-05-08 20:33:38,870 - logfile - DEBUG - MQTT-published: 478
+2025-05-08 20:33:38,870 - logfile - INFO - MQTT-Send `standby_p3` to topic `KAMELEN/IN/LICHT`
+2025-05-08 20:33:38,971 - logfile - DEBUG - MQTT-Received PUBLISH (d0, q0, r0, m0), 'KAMELEN/OUT/KAMEEL4_ISREADY', ...  (1 bytes)
+2025-05-08 20:33:38,971 - logfile - DEBUG - MQTT-KAMELEN/OUT/KAMEEL4_ISREADY 0 b'0'
+2025-05-08 20:33:38,971 - logfile - INFO - received message: 'KAMELEN/OUT/KAMEEL4_ISREADY' '0'
+2025-05-08 20:33:39,072 - logfile - DEBUG - MQTT-Received PUBLISH (d0, q0, r0, m0), 'KAMELEN/OUT/KAMEEL4_ISREADY', ...  (1 bytes)
+2025-05-08 20:33:39,072 - logfile - DEBUG - MQTT-KAMELEN/OUT/KAMEEL4_ISREADY 0 b'1'
+2025-05-08 20:33:39,072 - logfile - INFO - received message: 'KAMELEN/OUT/KAMEEL4_ISREADY' '1'
+2025-05-08 20:33:39,072 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m479), 'b'KAMELEN/IN/LICHT'', ... (10 bytes)
+2025-05-08 20:33:39,073 - logfile - DEBUG - MQTT-published: 479
+2025-05-08 20:33:39,073 - logfile - INFO - MQTT-Send `standby_p4` to topic `KAMELEN/IN/LICHT`
+2025-05-08 20:33:39,073 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m480), 'b'GAMECONTROLLER/OUT/STATE'', ... (7 bytes)
+2025-05-08 20:33:39,074 - logfile - DEBUG - MQTT-published: 480
+2025-05-08 20:33:39,074 - logfile - INFO - MQTT-Send `standby` to topic `GAMECONTROLLER/OUT/STATE`
+2025-05-08 20:33:39,176 - logfile - DEBUG - MQTT-Received PINGRESP
+2025-05-08 20:33:40,080 - logfile - DEBUG - MQTT-Received PUBLISH (d0, q0, r0, m0), 'KNOPPEN/OUT/CMD', ...  (5 bytes)
+2025-05-08 20:33:40,080 - logfile - DEBUG - MQTT-KNOPPEN/OUT/CMD 0 b'START'
+2025-05-08 20:33:40,080 - logfile - INFO - received message: 'KNOPPEN/OUT/CMD' 'START'
+2025-05-08 20:33:40,081 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m481), 'b'GAMECONTROLLER/OUT/STATE'', ... (11 bytes)
+2025-05-08 20:33:40,081 - logfile - DEBUG - MQTT-published: 481
+2025-05-08 20:33:40,081 - logfile - INFO - MQTT-Send `countdown_5` to topic `GAMECONTROLLER/OUT/STATE`
+2025-05-08 20:33:40,182 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m482), 'b'GAMECONTROLLER/OUT/STATE'', ... (14 bytes)
+2025-05-08 20:33:40,182 - logfile - DEBUG - MQTT-published: 482
+2025-05-08 20:33:40,182 - logfile - INFO - MQTT-Send `waitcountdown5` to topic `GAMECONTROLLER/OUT/STATE`
+2025-05-08 20:33:40,182 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m483), 'b'KAMELEN/IN/LICHT'', ... (11 bytes)
+2025-05-08 20:33:40,182 - logfile - DEBUG - MQTT-published: 483
+2025-05-08 20:33:40,182 - logfile - INFO - MQTT-Send `countdown_5` to topic `KAMELEN/IN/LICHT`
+2025-05-08 20:33:41,188 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m484), 'b'GAMECONTROLLER/OUT/STATE'', ... (11 bytes)
+2025-05-08 20:33:41,188 - logfile - DEBUG - MQTT-published: 484
+2025-05-08 20:33:41,189 - logfile - INFO - MQTT-Send `countdown_4` to topic `GAMECONTROLLER/OUT/STATE`
+2025-05-08 20:33:41,289 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m485), 'b'GAMECONTROLLER/OUT/STATE'', ... (14 bytes)
+2025-05-08 20:33:41,289 - logfile - DEBUG - MQTT-published: 485
+2025-05-08 20:33:41,289 - logfile - INFO - MQTT-Send `waitcountdown4` to topic `GAMECONTROLLER/OUT/STATE`
+2025-05-08 20:33:41,290 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m486), 'b'KAMELEN/IN/LICHT'', ... (11 bytes)
+2025-05-08 20:33:41,290 - logfile - DEBUG - MQTT-published: 486
+2025-05-08 20:33:41,290 - logfile - INFO - MQTT-Send `countdown_4` to topic `KAMELEN/IN/LICHT`
+2025-05-08 20:33:42,195 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m487), 'b'GAMECONTROLLER/OUT/STATE'', ... (11 bytes)
+2025-05-08 20:33:42,195 - logfile - DEBUG - MQTT-published: 487
+2025-05-08 20:33:42,195 - logfile - INFO - MQTT-Send `countdown_3` to topic `GAMECONTROLLER/OUT/STATE`
+2025-05-08 20:33:42,297 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m488), 'b'GAMECONTROLLER/OUT/STATE'', ... (14 bytes)
+2025-05-08 20:33:42,297 - logfile - DEBUG - MQTT-published: 488
+2025-05-08 20:33:42,297 - logfile - INFO - MQTT-Send `waitcountdown3` to topic `GAMECONTROLLER/OUT/STATE`
+2025-05-08 20:33:42,298 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m489), 'b'KAMELEN/IN/LICHT'', ... (11 bytes)
+2025-05-08 20:33:42,298 - logfile - DEBUG - MQTT-published: 489
+2025-05-08 20:33:42,298 - logfile - INFO - MQTT-Send `countdown_3` to topic `KAMELEN/IN/LICHT`
+2025-05-08 20:33:43,203 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m490), 'b'GAMECONTROLLER/OUT/STATE'', ... (11 bytes)
+2025-05-08 20:33:43,204 - logfile - DEBUG - MQTT-published: 490
+2025-05-08 20:33:43,204 - logfile - INFO - MQTT-Send `countdown_2` to topic `GAMECONTROLLER/OUT/STATE`
+2025-05-08 20:33:43,305 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m491), 'b'GAMECONTROLLER/OUT/STATE'', ... (14 bytes)
+2025-05-08 20:33:43,305 - logfile - DEBUG - MQTT-published: 491
+2025-05-08 20:33:43,305 - logfile - INFO - MQTT-Send `waitcountdown2` to topic `GAMECONTROLLER/OUT/STATE`
+2025-05-08 20:33:43,305 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m492), 'b'KAMELEN/IN/LICHT'', ... (11 bytes)
+2025-05-08 20:33:43,306 - logfile - DEBUG - MQTT-published: 492
+2025-05-08 20:33:43,306 - logfile - INFO - MQTT-Send `countdown_2` to topic `KAMELEN/IN/LICHT`
+2025-05-08 20:33:44,312 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m493), 'b'GAMECONTROLLER/OUT/STATE'', ... (11 bytes)
+2025-05-08 20:33:44,312 - logfile - DEBUG - MQTT-published: 493
+2025-05-08 20:33:44,312 - logfile - INFO - MQTT-Send `countdown_1` to topic `GAMECONTROLLER/OUT/STATE`
+2025-05-08 20:33:44,413 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m494), 'b'GAMECONTROLLER/OUT/STATE'', ... (14 bytes)
+2025-05-08 20:33:44,413 - logfile - DEBUG - MQTT-published: 494
+2025-05-08 20:33:44,413 - logfile - INFO - MQTT-Send `waitcountdown1` to topic `GAMECONTROLLER/OUT/STATE`
+2025-05-08 20:33:44,415 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m495), 'b'KAMELEN/IN/LICHT'', ... (11 bytes)
+2025-05-08 20:33:44,415 - logfile - DEBUG - MQTT-published: 495
+2025-05-08 20:33:44,415 - logfile - INFO - MQTT-Send `countdown_1` to topic `KAMELEN/IN/LICHT`
+2025-05-08 20:33:45,220 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m496), 'b'GAMECONTROLLER/OUT/STATE'', ... (12 bytes)
+2025-05-08 20:33:45,220 - logfile - DEBUG - MQTT-published: 496
+2025-05-08 20:33:45,220 - logfile - INFO - MQTT-Send `countdown_go` to topic `GAMECONTROLLER/OUT/STATE`
+2025-05-08 20:33:45,321 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m497), 'b'GAMECONTROLLER/OUT/STATE'', ... (15 bytes)
+2025-05-08 20:33:45,322 - logfile - DEBUG - MQTT-published: 497
+2025-05-08 20:33:45,322 - logfile - INFO - MQTT-Send `waitcountdowngo` to topic `GAMECONTROLLER/OUT/STATE`
+2025-05-08 20:33:45,322 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m498), 'b'KAMELEN/IN/LICHT'', ... (12 bytes)
+2025-05-08 20:33:45,322 - logfile - DEBUG - MQTT-published: 498
+2025-05-08 20:33:45,322 - logfile - INFO - MQTT-Send `countdown_go` to topic `KAMELEN/IN/LICHT`
+2025-05-08 20:33:46,329 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m499), 'b'GAMECONTROLLER/OUT/STATE'', ... (7 bytes)
+2025-05-08 20:33:46,329 - logfile - DEBUG - MQTT-published: 499
+2025-05-08 20:33:46,329 - logfile - INFO - MQTT-Send `playing` to topic `GAMECONTROLLER/OUT/STATE`
+2025-05-08 20:33:46,330 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m500), 'b'KAMELEN/IN/LICHT'', ... (7 bytes)
+2025-05-08 20:33:46,330 - logfile - DEBUG - MQTT-published: 500
+2025-05-08 20:33:46,330 - logfile - INFO - MQTT-Send `playing` to topic `KAMELEN/IN/LICHT`
+2025-05-08 20:33:46,330 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m501), 'b'SPEELBAK1/IN/RESET'', ... (3 bytes)
+2025-05-08 20:33:46,331 - logfile - DEBUG - MQTT-published: 501
+2025-05-08 20:33:46,331 - logfile - INFO - MQTT-Send `NOW` to topic `SPEELBAK1/IN/RESET`
+2025-05-08 20:33:46,331 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m502), 'b'SPEELBAK2/IN/RESET'', ... (3 bytes)
+2025-05-08 20:33:46,331 - logfile - DEBUG - MQTT-published: 502
+2025-05-08 20:33:46,332 - logfile - INFO - MQTT-Send `NOW` to topic `SPEELBAK2/IN/RESET`
+2025-05-08 20:33:46,332 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m503), 'b'SPEELBAK3/IN/RESET'', ... (3 bytes)
+2025-05-08 20:33:46,332 - logfile - DEBUG - MQTT-published: 503
+2025-05-08 20:33:46,332 - logfile - INFO - MQTT-Send `NOW` to topic `SPEELBAK3/IN/RESET`
+2025-05-08 20:33:46,332 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m504), 'b'SPEELBAK4/IN/RESET'', ... (3 bytes)
+2025-05-08 20:33:46,333 - logfile - DEBUG - MQTT-published: 504
+2025-05-08 20:33:46,333 - logfile - INFO - MQTT-Send `NOW` to topic `SPEELBAK4/IN/RESET`
+2025-05-08 20:33:46,333 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m505), 'b'GAMECONTROLLER/OUT/WINNER'', ... (1 bytes)
+2025-05-08 20:33:46,333 - logfile - DEBUG - MQTT-published: 505
+2025-05-08 20:33:46,333 - logfile - INFO - MQTT-Send `0` to topic `GAMECONTROLLER/OUT/WINNER`
+2025-05-08 20:33:46,535 - logfile - DEBUG - MQTT-Received PUBLISH (d0, q0, r0, m0), 'SPEELBAK2/OUT/SCORE', ...  (1 bytes)
+2025-05-08 20:33:46,535 - logfile - DEBUG - MQTT-SPEELBAK2/OUT/SCORE 0 b'0'
+2025-05-08 20:33:46,535 - logfile - INFO - received message: 'SPEELBAK2/OUT/SCORE' '0'
+2025-05-08 20:33:46,637 - logfile - DEBUG - MQTT-Received PUBLISH (d0, q0, r0, m0), 'SPEELBAK1/OUT/SCORE', ...  (1 bytes)
+2025-05-08 20:33:46,637 - logfile - DEBUG - MQTT-SPEELBAK1/OUT/SCORE 0 b'0'
+2025-05-08 20:33:46,637 - logfile - INFO - received message: 'SPEELBAK1/OUT/SCORE' '0'
+2025-05-08 20:33:46,739 - logfile - DEBUG - MQTT-Received PUBLISH (d0, q0, r0, m0), 'SPEELBAK3/OUT/SCORE', ...  (1 bytes)
+2025-05-08 20:33:46,739 - logfile - DEBUG - MQTT-SPEELBAK3/OUT/SCORE 0 b'0'
+2025-05-08 20:33:46,739 - logfile - INFO - received message: 'SPEELBAK3/OUT/SCORE' '0'
+2025-05-08 20:33:46,840 - logfile - DEBUG - MQTT-Received PUBLISH (d0, q0, r0, m0), 'SPEELBAK4/OUT/SCORE', ...  (1 bytes)
+2025-05-08 20:33:46,840 - logfile - DEBUG - MQTT-SPEELBAK4/OUT/SCORE 0 b'0'
+2025-05-08 20:33:46,840 - logfile - INFO - received message: 'SPEELBAK4/OUT/SCORE' '0'
+2025-05-08 20:33:48,348 - logfile - DEBUG - MQTT-Sending PINGREQ
+2025-05-08 20:33:48,449 - logfile - DEBUG - MQTT-Received PINGRESP
+2025-05-08 20:33:58,395 - logfile - DEBUG - MQTT-Sending PINGREQ
+2025-05-08 20:33:58,496 - logfile - DEBUG - MQTT-Received PINGRESP
+2025-05-08 20:34:08,443 - logfile - DEBUG - MQTT-Sending PINGREQ
+2025-05-08 20:34:08,544 - logfile - DEBUG - MQTT-Received PINGRESP
+2025-05-08 20:34:18,490 - logfile - DEBUG - MQTT-Sending PINGREQ
+2025-05-08 20:34:18,591 - logfile - DEBUG - MQTT-Received PINGRESP
+2025-05-08 20:34:28,534 - logfile - DEBUG - MQTT-Sending PINGREQ
+2025-05-08 20:34:28,635 - logfile - DEBUG - MQTT-Received PINGRESP
+2025-05-08 20:34:38,580 - logfile - DEBUG - MQTT-Sending PINGREQ
+2025-05-08 20:34:38,681 - logfile - DEBUG - MQTT-Received PINGRESP
+2025-05-08 20:34:48,629 - logfile - DEBUG - MQTT-Sending PINGREQ
+2025-05-08 20:34:48,729 - logfile - DEBUG - MQTT-Received PINGRESP
+2025-05-08 20:34:58,675 - logfile - DEBUG - MQTT-Sending PINGREQ
+2025-05-08 20:34:58,776 - logfile - DEBUG - MQTT-Received PINGRESP
+2025-05-08 20:35:08,720 - logfile - DEBUG - MQTT-Sending PINGREQ
+2025-05-08 20:35:08,821 - logfile - DEBUG - MQTT-Received PINGRESP
+2025-05-08 20:35:18,768 - logfile - DEBUG - MQTT-Sending PINGREQ
+2025-05-08 20:35:18,870 - logfile - DEBUG - MQTT-Received PINGRESP
+2025-05-08 20:35:28,813 - logfile - DEBUG - MQTT-Sending PINGREQ
+2025-05-08 20:35:28,914 - logfile - DEBUG - MQTT-Received PINGRESP
+2025-05-08 20:35:38,856 - logfile - DEBUG - MQTT-Sending PINGREQ
+2025-05-08 20:35:38,957 - logfile - DEBUG - MQTT-Received PINGRESP
+2025-05-08 20:35:48,901 - logfile - DEBUG - MQTT-Sending PINGREQ
+2025-05-08 20:35:49,001 - logfile - DEBUG - MQTT-Received PINGRESP
+2025-05-08 20:36:02,111 - logfile - DEBUG - MQTT-Sending CONNECT (u0, p0, wr0, wq0, wf0, c1, k10) client_id=b'subscribe-72'
+2025-05-08 20:36:02,112 - logfile - DEBUG - MQTT-Sending SUBSCRIBE (d0, m1) [(b'SPEELBAK1/OUT/#', 0)]
+2025-05-08 20:36:02,112 - logfile - DEBUG - MQTT-Sending SUBSCRIBE (d0, m2) [(b'SPEELBAK2/OUT/#', 0)]
+2025-05-08 20:36:02,112 - logfile - DEBUG - MQTT-Sending SUBSCRIBE (d0, m3) [(b'SPEELBAK3/OUT/#', 0)]
+2025-05-08 20:36:02,112 - logfile - DEBUG - MQTT-Sending SUBSCRIBE (d0, m4) [(b'SPEELBAK4/OUT/#', 0)]
+2025-05-08 20:36:02,113 - logfile - DEBUG - MQTT-Sending SUBSCRIBE (d0, m5) [(b'KNOPPEN/OUT/#', 0)]
+2025-05-08 20:36:02,113 - logfile - DEBUG - MQTT-Sending SUBSCRIBE (d0, m6) [(b'KAMELEN/OUT/#', 0)]
+2025-05-08 20:36:02,113 - logfile - DEBUG - MQTT-Sending SUBSCRIBE (d0, m7) [(b'GAMECONTROLLER/IN/#', 0)]
+2025-05-08 20:36:02,113 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m8), 'b'GAMECONTROLLER/OUT/SCOREMULTIPLIER'', ... (1 bytes)
+2025-05-08 20:36:02,113 - logfile - DEBUG - MQTT-published: 8
+2025-05-08 20:36:02,113 - logfile - INFO - MQTT-Send `5` to topic `GAMECONTROLLER/OUT/SCOREMULTIPLIER`
+2025-05-08 20:36:02,292 - logfile - INFO - Starting main while lus.
+2025-05-08 20:36:02,293 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m9), 'b'KAMELEN/IN/LICHT'', ... (7 bytes)
+2025-05-08 20:36:02,293 - logfile - DEBUG - MQTT-published: 9
+2025-05-08 20:36:02,293 - logfile - INFO - MQTT-Send `un_init` to topic `KAMELEN/IN/LICHT`
+2025-05-08 20:36:02,394 - logfile - DEBUG - MQTT-Received CONNACK (0, 0)
+2025-05-08 20:36:02,394 - logfile - INFO - MQTT-rc: 0
+2025-05-08 20:36:02,494 - logfile - DEBUG - MQTT-Received SUBACK
+2025-05-08 20:36:02,494 - logfile - INFO - MQTT-Subscribed: 1 (0,)
+2025-05-08 20:36:02,595 - logfile - DEBUG - MQTT-Received SUBACK
+2025-05-08 20:36:02,595 - logfile - INFO - MQTT-Subscribed: 2 (0,)
+2025-05-08 20:36:02,697 - logfile - DEBUG - MQTT-Received SUBACK
+2025-05-08 20:36:02,697 - logfile - INFO - MQTT-Subscribed: 3 (0,)
+2025-05-08 20:36:02,798 - logfile - DEBUG - MQTT-Received SUBACK
+2025-05-08 20:36:02,798 - logfile - INFO - MQTT-Subscribed: 4 (0,)
+2025-05-08 20:36:02,899 - logfile - DEBUG - MQTT-Received SUBACK
+2025-05-08 20:36:02,899 - logfile - INFO - MQTT-Subscribed: 5 (0,)
+2025-05-08 20:36:03,000 - logfile - DEBUG - MQTT-Received SUBACK
+2025-05-08 20:36:03,000 - logfile - INFO - MQTT-Subscribed: 6 (0,)
+2025-05-08 20:36:03,101 - logfile - DEBUG - MQTT-Received SUBACK
+2025-05-08 20:36:03,101 - logfile - INFO - MQTT-Subscribed: 7 (0,)
+2025-05-08 20:36:12,142 - logfile - DEBUG - MQTT-Sending PINGREQ
+2025-05-08 20:36:12,243 - logfile - DEBUG - MQTT-Received PINGRESP
+2025-05-08 20:36:22,187 - logfile - DEBUG - MQTT-Sending PINGREQ
+2025-05-08 20:36:22,288 - logfile - DEBUG - MQTT-Received PINGRESP
+2025-05-08 20:36:22,690 - logfile - DEBUG - MQTT-Received PUBLISH (d0, q0, r0, m0), 'KNOPPEN/OUT/CMD', ...  (5 bytes)
+2025-05-08 20:36:22,690 - logfile - DEBUG - MQTT-KNOPPEN/OUT/CMD 0 b'RESET'
+2025-05-08 20:36:22,690 - logfile - INFO - received message: 'KNOPPEN/OUT/CMD' 'RESET'
+2025-05-08 20:36:22,691 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m10), 'b'SPEELBAK1/IN/RESET'', ... (3 bytes)
+2025-05-08 20:36:22,691 - logfile - DEBUG - MQTT-published: 10
+2025-05-08 20:36:22,691 - logfile - INFO - MQTT-Send `NOW` to topic `SPEELBAK1/IN/RESET`
+2025-05-08 20:36:22,691 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m11), 'b'SPEELBAK2/IN/RESET'', ... (3 bytes)
+2025-05-08 20:36:22,691 - logfile - DEBUG - MQTT-published: 11
+2025-05-08 20:36:22,692 - logfile - INFO - MQTT-Send `NOW` to topic `SPEELBAK2/IN/RESET`
+2025-05-08 20:36:22,692 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m12), 'b'SPEELBAK3/IN/RESET'', ... (3 bytes)
+2025-05-08 20:36:22,692 - logfile - DEBUG - MQTT-published: 12
+2025-05-08 20:36:22,692 - logfile - INFO - MQTT-Send `NOW` to topic `SPEELBAK3/IN/RESET`
+2025-05-08 20:36:22,692 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m13), 'b'SPEELBAK4/IN/RESET'', ... (3 bytes)
+2025-05-08 20:36:22,692 - logfile - DEBUG - MQTT-published: 13
+2025-05-08 20:36:22,692 - logfile - INFO - MQTT-Send `NOW` to topic `SPEELBAK4/IN/RESET`
+2025-05-08 20:36:22,694 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m14), 'b'GAMECONTROLLER/OUT/STATE'', ... (7 bytes)
+2025-05-08 20:36:22,694 - logfile - DEBUG - MQTT-published: 14
+2025-05-08 20:36:22,694 - logfile - INFO - MQTT-Send `un_init` to topic `GAMECONTROLLER/OUT/STATE`
+2025-05-08 20:36:22,694 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m15), 'b'KAMELEN/IN/LICHT'', ... (7 bytes)
+2025-05-08 20:36:22,695 - logfile - DEBUG - MQTT-published: 15
+2025-05-08 20:36:22,695 - logfile - INFO - MQTT-Send `un_init` to topic `KAMELEN/IN/LICHT`
+2025-05-08 20:36:22,795 - logfile - DEBUG - MQTT-Received PUBLISH (d0, q0, r0, m0), 'KAMELEN/OUT/KAMEEL1_ISREADY', ...  (1 bytes)
+2025-05-08 20:36:22,796 - logfile - DEBUG - MQTT-KAMELEN/OUT/KAMEEL1_ISREADY 0 b'0'
+2025-05-08 20:36:22,796 - logfile - INFO - received message: 'KAMELEN/OUT/KAMEEL1_ISREADY' '0'
+2025-05-08 20:36:22,897 - logfile - DEBUG - MQTT-Received PUBLISH (d0, q0, r0, m0), 'KAMELEN/OUT/KAMEEL2_ISREADY', ...  (1 bytes)
+2025-05-08 20:36:22,897 - logfile - DEBUG - MQTT-KAMELEN/OUT/KAMEEL2_ISREADY 0 b'0'
+2025-05-08 20:36:22,897 - logfile - INFO - received message: 'KAMELEN/OUT/KAMEEL2_ISREADY' '0'
+2025-05-08 20:36:22,998 - logfile - DEBUG - MQTT-Received PUBLISH (d0, q0, r0, m0), 'KAMELEN/OUT/KAMEEL3_ISREADY', ...  (1 bytes)
+2025-05-08 20:36:22,998 - logfile - DEBUG - MQTT-KAMELEN/OUT/KAMEEL3_ISREADY 0 b'0'
+2025-05-08 20:36:22,999 - logfile - INFO - received message: 'KAMELEN/OUT/KAMEEL3_ISREADY' '0'
+2025-05-08 20:36:23,100 - logfile - DEBUG - MQTT-Received PUBLISH (d0, q0, r0, m0), 'KAMELEN/OUT/KAMEEL4_ISREADY', ...  (1 bytes)
+2025-05-08 20:36:23,100 - logfile - DEBUG - MQTT-KAMELEN/OUT/KAMEEL4_ISREADY 0 b'0'
+2025-05-08 20:36:23,100 - logfile - INFO - received message: 'KAMELEN/OUT/KAMEEL4_ISREADY' '0'
+2025-05-08 20:36:23,201 - logfile - DEBUG - MQTT-Received PUBLISH (d0, q0, r0, m0), 'SPEELBAK4/OUT/SCORE', ...  (1 bytes)
+2025-05-08 20:36:23,201 - logfile - DEBUG - MQTT-SPEELBAK4/OUT/SCORE 0 b'0'
+2025-05-08 20:36:23,201 - logfile - INFO - received message: 'SPEELBAK4/OUT/SCORE' '0'
+2025-05-08 20:36:23,302 - logfile - DEBUG - MQTT-Received PUBLISH (d0, q0, r0, m0), 'SPEELBAK4/OUT/SCORE', ...  (1 bytes)
+2025-05-08 20:36:23,302 - logfile - DEBUG - MQTT-SPEELBAK4/OUT/SCORE 0 b'0'
+2025-05-08 20:36:23,302 - logfile - INFO - received message: 'SPEELBAK4/OUT/SCORE' '0'
+2025-05-08 20:36:23,403 - logfile - DEBUG - MQTT-Received PUBLISH (d0, q0, r0, m0), 'SPEELBAK2/OUT/SCORE', ...  (1 bytes)
+2025-05-08 20:36:23,403 - logfile - DEBUG - MQTT-SPEELBAK2/OUT/SCORE 0 b'0'
+2025-05-08 20:36:23,403 - logfile - INFO - received message: 'SPEELBAK2/OUT/SCORE' '0'
+2025-05-08 20:36:23,505 - logfile - DEBUG - MQTT-Received PUBLISH (d0, q0, r0, m0), 'SPEELBAK3/OUT/SCORE', ...  (1 bytes)
+2025-05-08 20:36:23,505 - logfile - DEBUG - MQTT-SPEELBAK3/OUT/SCORE 0 b'0'
+2025-05-08 20:36:23,505 - logfile - INFO - received message: 'SPEELBAK3/OUT/SCORE' '0'
+2025-05-08 20:36:23,607 - logfile - DEBUG - MQTT-Received PUBLISH (d0, q0, r0, m0), 'SPEELBAK1/OUT/SCORE', ...  (1 bytes)
+2025-05-08 20:36:23,607 - logfile - DEBUG - MQTT-SPEELBAK1/OUT/SCORE 0 b'0'
+2025-05-08 20:36:23,607 - logfile - INFO - received message: 'SPEELBAK1/OUT/SCORE' '0'
+2025-05-08 20:36:23,709 - logfile - DEBUG - MQTT-Received PUBLISH (d0, q0, r0, m0), 'SPEELBAK3/OUT/SCORE', ...  (1 bytes)
+2025-05-08 20:36:23,709 - logfile - DEBUG - MQTT-SPEELBAK3/OUT/SCORE 0 b'0'
+2025-05-08 20:36:23,709 - logfile - INFO - received message: 'SPEELBAK3/OUT/SCORE' '0'
+2025-05-08 20:36:23,810 - logfile - DEBUG - MQTT-Received PUBLISH (d0, q0, r0, m0), 'SPEELBAK2/OUT/SCORE', ...  (1 bytes)
+2025-05-08 20:36:23,810 - logfile - DEBUG - MQTT-SPEELBAK2/OUT/SCORE 0 b'0'
+2025-05-08 20:36:23,810 - logfile - INFO - received message: 'SPEELBAK2/OUT/SCORE' '0'
+2025-05-08 20:36:23,911 - logfile - DEBUG - MQTT-Received PUBLISH (d0, q0, r0, m0), 'SPEELBAK1/OUT/SCORE', ...  (1 bytes)
+2025-05-08 20:36:23,911 - logfile - DEBUG - MQTT-SPEELBAK1/OUT/SCORE 0 b'0'
+2025-05-08 20:36:23,911 - logfile - INFO - received message: 'SPEELBAK1/OUT/SCORE' '0'
+2025-05-08 20:36:24,012 - logfile - DEBUG - MQTT-Received PUBLISH (d0, q0, r0, m0), 'KAMELEN/OUT/KAMEEL1_ISREADY', ...  (1 bytes)
+2025-05-08 20:36:24,012 - logfile - DEBUG - MQTT-KAMELEN/OUT/KAMEEL1_ISREADY 0 b'1'
+2025-05-08 20:36:24,012 - logfile - INFO - received message: 'KAMELEN/OUT/KAMEEL1_ISREADY' '1'
+2025-05-08 20:36:24,113 - logfile - DEBUG - MQTT-Received PUBLISH (d0, q0, r0, m0), 'KAMELEN/OUT/KAMEEL2_ISREADY', ...  (1 bytes)
+2025-05-08 20:36:24,113 - logfile - DEBUG - MQTT-KAMELEN/OUT/KAMEEL2_ISREADY 0 b'1'
+2025-05-08 20:36:24,113 - logfile - INFO - received message: 'KAMELEN/OUT/KAMEEL2_ISREADY' '1'
+2025-05-08 20:36:24,214 - logfile - DEBUG - MQTT-Received PUBLISH (d0, q0, r0, m0), 'KAMELEN/OUT/KAMEEL3_ISREADY', ...  (1 bytes)
+2025-05-08 20:36:24,214 - logfile - DEBUG - MQTT-KAMELEN/OUT/KAMEEL3_ISREADY 0 b'1'
+2025-05-08 20:36:24,214 - logfile - INFO - received message: 'KAMELEN/OUT/KAMEEL3_ISREADY' '1'
+2025-05-08 20:36:24,315 - logfile - DEBUG - MQTT-Received PUBLISH (d0, q0, r0, m0), 'KAMELEN/OUT/KAMEEL4_ISREADY', ...  (1 bytes)
+2025-05-08 20:36:24,315 - logfile - DEBUG - MQTT-KAMELEN/OUT/KAMEEL4_ISREADY 0 b'1'
+2025-05-08 20:36:24,315 - logfile - INFO - received message: 'KAMELEN/OUT/KAMEEL4_ISREADY' '1'
+2025-05-08 20:36:25,220 - logfile - DEBUG - MQTT-Received PUBLISH (d0, q0, r0, m0), 'KNOPPEN/OUT/CMD', ...  (5 bytes)
+2025-05-08 20:36:25,220 - logfile - DEBUG - MQTT-KNOPPEN/OUT/CMD 0 b'RESET'
+2025-05-08 20:36:25,220 - logfile - INFO - received message: 'KNOPPEN/OUT/CMD' 'RESET'
+2025-05-08 20:36:25,221 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m16), 'b'SPEELBAK1/IN/RESET'', ... (3 bytes)
+2025-05-08 20:36:25,221 - logfile - DEBUG - MQTT-published: 16
+2025-05-08 20:36:25,221 - logfile - INFO - MQTT-Send `NOW` to topic `SPEELBAK1/IN/RESET`
+2025-05-08 20:36:25,221 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m17), 'b'SPEELBAK2/IN/RESET'', ... (3 bytes)
+2025-05-08 20:36:25,222 - logfile - DEBUG - MQTT-published: 17
+2025-05-08 20:36:25,222 - logfile - INFO - MQTT-Send `NOW` to topic `SPEELBAK2/IN/RESET`
+2025-05-08 20:36:25,222 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m18), 'b'SPEELBAK3/IN/RESET'', ... (3 bytes)
+2025-05-08 20:36:25,222 - logfile - DEBUG - MQTT-published: 18
+2025-05-08 20:36:25,222 - logfile - INFO - MQTT-Send `NOW` to topic `SPEELBAK3/IN/RESET`
+2025-05-08 20:36:25,222 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m19), 'b'SPEELBAK4/IN/RESET'', ... (3 bytes)
+2025-05-08 20:36:25,222 - logfile - DEBUG - MQTT-published: 19
+2025-05-08 20:36:25,222 - logfile - INFO - MQTT-Send `NOW` to topic `SPEELBAK4/IN/RESET`
+2025-05-08 20:36:25,224 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m20), 'b'GAMECONTROLLER/OUT/STATE'', ... (7 bytes)
+2025-05-08 20:36:25,224 - logfile - DEBUG - MQTT-published: 20
+2025-05-08 20:36:25,224 - logfile - INFO - MQTT-Send `un_init` to topic `GAMECONTROLLER/OUT/STATE`
+2025-05-08 20:36:25,224 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m21), 'b'KAMELEN/IN/LICHT'', ... (7 bytes)
+2025-05-08 20:36:25,224 - logfile - DEBUG - MQTT-published: 21
+2025-05-08 20:36:25,225 - logfile - INFO - MQTT-Send `un_init` to topic `KAMELEN/IN/LICHT`
+2025-05-08 20:36:25,426 - logfile - DEBUG - MQTT-Received PUBLISH (d0, q0, r0, m0), 'SPEELBAK2/OUT/SCORE', ...  (1 bytes)
+2025-05-08 20:36:25,426 - logfile - DEBUG - MQTT-SPEELBAK2/OUT/SCORE 0 b'0'
+2025-05-08 20:36:25,426 - logfile - INFO - received message: 'SPEELBAK2/OUT/SCORE' '0'
+2025-05-08 20:36:25,527 - logfile - DEBUG - MQTT-Received PUBLISH (d0, q0, r0, m0), 'SPEELBAK4/OUT/SCORE', ...  (1 bytes)
+2025-05-08 20:36:25,527 - logfile - DEBUG - MQTT-SPEELBAK4/OUT/SCORE 0 b'0'
+2025-05-08 20:36:25,527 - logfile - INFO - received message: 'SPEELBAK4/OUT/SCORE' '0'
+2025-05-08 20:36:25,628 - logfile - DEBUG - MQTT-Received PUBLISH (d0, q0, r0, m0), 'SPEELBAK1/OUT/SCORE', ...  (1 bytes)
+2025-05-08 20:36:25,628 - logfile - DEBUG - MQTT-SPEELBAK1/OUT/SCORE 0 b'0'
+2025-05-08 20:36:25,628 - logfile - INFO - received message: 'SPEELBAK1/OUT/SCORE' '0'
+2025-05-08 20:36:25,729 - logfile - DEBUG - MQTT-Received PUBLISH (d0, q0, r0, m0), 'SPEELBAK3/OUT/SCORE', ...  (1 bytes)
+2025-05-08 20:36:25,729 - logfile - DEBUG - MQTT-SPEELBAK3/OUT/SCORE 0 b'0'
+2025-05-08 20:36:25,730 - logfile - INFO - received message: 'SPEELBAK3/OUT/SCORE' '0'
+2025-05-08 20:36:25,830 - logfile - DEBUG - MQTT-Received PUBLISH (d0, q0, r0, m0), 'SPEELBAK2/OUT/SCORE', ...  (1 bytes)
+2025-05-08 20:36:25,830 - logfile - DEBUG - MQTT-SPEELBAK2/OUT/SCORE 0 b'0'
+2025-05-08 20:36:25,830 - logfile - INFO - received message: 'SPEELBAK2/OUT/SCORE' '0'
+2025-05-08 20:36:25,932 - logfile - DEBUG - MQTT-Received PUBLISH (d0, q0, r0, m0), 'SPEELBAK4/OUT/SCORE', ...  (1 bytes)
+2025-05-08 20:36:25,932 - logfile - DEBUG - MQTT-SPEELBAK4/OUT/SCORE 0 b'0'
+2025-05-08 20:36:25,932 - logfile - INFO - received message: 'SPEELBAK4/OUT/SCORE' '0'
+2025-05-08 20:36:26,033 - logfile - DEBUG - MQTT-Received PUBLISH (d0, q0, r0, m0), 'SPEELBAK1/OUT/SCORE', ...  (1 bytes)
+2025-05-08 20:36:26,033 - logfile - DEBUG - MQTT-SPEELBAK1/OUT/SCORE 0 b'0'
+2025-05-08 20:36:26,033 - logfile - INFO - received message: 'SPEELBAK1/OUT/SCORE' '0'
+2025-05-08 20:36:26,134 - logfile - DEBUG - MQTT-Received PUBLISH (d0, q0, r0, m0), 'SPEELBAK3/OUT/SCORE', ...  (1 bytes)
+2025-05-08 20:36:26,134 - logfile - DEBUG - MQTT-SPEELBAK3/OUT/SCORE 0 b'0'
+2025-05-08 20:36:26,134 - logfile - INFO - received message: 'SPEELBAK3/OUT/SCORE' '0'
+2025-05-08 20:36:26,236 - logfile - DEBUG - MQTT-Received PUBLISH (d0, q0, r0, m0), 'KNOPPEN/OUT/CMD', ...  (5 bytes)
+2025-05-08 20:36:26,236 - logfile - DEBUG - MQTT-KNOPPEN/OUT/CMD 0 b'START'
+2025-05-08 20:36:26,236 - logfile - INFO - received message: 'KNOPPEN/OUT/CMD' 'START'
+2025-05-08 20:36:26,236 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m22), 'b'KAMELEN/IN/KAMEEL1'', ... (1 bytes)
+2025-05-08 20:36:26,236 - logfile - DEBUG - MQTT-published: 22
+2025-05-08 20:36:26,236 - logfile - INFO - MQTT-Send `0` to topic `KAMELEN/IN/KAMEEL1`
+2025-05-08 20:36:26,238 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m23), 'b'KAMELEN/IN/LICHT'', ... (18 bytes)
+2025-05-08 20:36:26,238 - logfile - DEBUG - MQTT-published: 23
+2025-05-08 20:36:26,238 - logfile - INFO - MQTT-Send `is_initializing_p1` to topic `KAMELEN/IN/LICHT`
+2025-05-08 20:36:26,238 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m24), 'b'KAMELEN/IN/KAMEEL2'', ... (1 bytes)
+2025-05-08 20:36:26,239 - logfile - DEBUG - MQTT-published: 24
+2025-05-08 20:36:26,239 - logfile - INFO - MQTT-Send `0` to topic `KAMELEN/IN/KAMEEL2`
+2025-05-08 20:36:26,239 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m25), 'b'KAMELEN/IN/LICHT'', ... (18 bytes)
+2025-05-08 20:36:26,240 - logfile - DEBUG - MQTT-published: 25
+2025-05-08 20:36:26,240 - logfile - INFO - MQTT-Send `is_initializing_p2` to topic `KAMELEN/IN/LICHT`
+2025-05-08 20:36:26,240 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m26), 'b'KAMELEN/IN/KAMEEL3'', ... (1 bytes)
+2025-05-08 20:36:26,240 - logfile - DEBUG - MQTT-published: 26
+2025-05-08 20:36:26,241 - logfile - INFO - MQTT-Send `0` to topic `KAMELEN/IN/KAMEEL3`
+2025-05-08 20:36:26,241 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m27), 'b'KAMELEN/IN/LICHT'', ... (18 bytes)
+2025-05-08 20:36:26,241 - logfile - DEBUG - MQTT-published: 27
+2025-05-08 20:36:26,241 - logfile - INFO - MQTT-Send `is_initializing_p3` to topic `KAMELEN/IN/LICHT`
+2025-05-08 20:36:26,241 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m28), 'b'KAMELEN/IN/KAMEEL4'', ... (1 bytes)
+2025-05-08 20:36:26,241 - logfile - DEBUG - MQTT-published: 28
+2025-05-08 20:36:26,241 - logfile - INFO - MQTT-Send `0` to topic `KAMELEN/IN/KAMEEL4`
+2025-05-08 20:36:26,242 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m29), 'b'KAMELEN/IN/LICHT'', ... (18 bytes)
+2025-05-08 20:36:26,242 - logfile - DEBUG - MQTT-published: 29
+2025-05-08 20:36:26,242 - logfile - INFO - MQTT-Send `is_initializing_p4` to topic `KAMELEN/IN/LICHT`
+2025-05-08 20:36:26,242 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m30), 'b'GAMECONTROLLER/OUT/STATE'', ... (15 bytes)
+2025-05-08 20:36:26,242 - logfile - DEBUG - MQTT-published: 30
+2025-05-08 20:36:26,242 - logfile - INFO - MQTT-Send `is_initializing` to topic `GAMECONTROLLER/OUT/STATE`
+2025-05-08 20:36:26,444 - logfile - DEBUG - MQTT-Received PUBLISH (d0, q0, r0, m0), 'KAMELEN/OUT/KAMEEL1_ISREADY', ...  (1 bytes)
+2025-05-08 20:36:26,444 - logfile - DEBUG - MQTT-KAMELEN/OUT/KAMEEL1_ISREADY 0 b'0'
+2025-05-08 20:36:26,444 - logfile - INFO - received message: 'KAMELEN/OUT/KAMEEL1_ISREADY' '0'
+2025-05-08 20:36:26,545 - logfile - DEBUG - MQTT-Received PUBLISH (d0, q0, r0, m0), 'KAMELEN/OUT/KAMEEL1_ISREADY', ...  (1 bytes)
+2025-05-08 20:36:26,545 - logfile - DEBUG - MQTT-KAMELEN/OUT/KAMEEL1_ISREADY 0 b'1'
+2025-05-08 20:36:26,545 - logfile - INFO - received message: 'KAMELEN/OUT/KAMEEL1_ISREADY' '1'
+2025-05-08 20:36:26,545 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m31), 'b'KAMELEN/IN/LICHT'', ... (10 bytes)
+2025-05-08 20:36:26,546 - logfile - DEBUG - MQTT-published: 31
+2025-05-08 20:36:26,546 - logfile - INFO - MQTT-Send `standby_p1` to topic `KAMELEN/IN/LICHT`
+2025-05-08 20:36:26,647 - logfile - DEBUG - MQTT-Received PUBLISH (d0, q0, r0, m0), 'KAMELEN/OUT/KAMEEL2_ISREADY', ...  (1 bytes)
+2025-05-08 20:36:26,647 - logfile - DEBUG - MQTT-KAMELEN/OUT/KAMEEL2_ISREADY 0 b'0'
+2025-05-08 20:36:26,647 - logfile - INFO - received message: 'KAMELEN/OUT/KAMEEL2_ISREADY' '0'
+2025-05-08 20:36:26,749 - logfile - DEBUG - MQTT-Received PUBLISH (d0, q0, r0, m0), 'KAMELEN/OUT/KAMEEL2_ISREADY', ...  (1 bytes)
+2025-05-08 20:36:26,749 - logfile - DEBUG - MQTT-KAMELEN/OUT/KAMEEL2_ISREADY 0 b'1'
+2025-05-08 20:36:26,750 - logfile - INFO - received message: 'KAMELEN/OUT/KAMEEL2_ISREADY' '1'
+2025-05-08 20:36:26,750 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m32), 'b'KAMELEN/IN/LICHT'', ... (10 bytes)
+2025-05-08 20:36:26,750 - logfile - DEBUG - MQTT-published: 32
+2025-05-08 20:36:26,750 - logfile - INFO - MQTT-Send `standby_p2` to topic `KAMELEN/IN/LICHT`
+2025-05-08 20:36:26,851 - logfile - DEBUG - MQTT-Received PUBLISH (d0, q0, r0, m0), 'KAMELEN/OUT/KAMEEL3_ISREADY', ...  (1 bytes)
+2025-05-08 20:36:26,851 - logfile - DEBUG - MQTT-KAMELEN/OUT/KAMEEL3_ISREADY 0 b'0'
+2025-05-08 20:36:26,852 - logfile - INFO - received message: 'KAMELEN/OUT/KAMEEL3_ISREADY' '0'
+2025-05-08 20:36:26,952 - logfile - DEBUG - MQTT-Received PUBLISH (d0, q0, r0, m0), 'KAMELEN/OUT/KAMEEL3_ISREADY', ...  (1 bytes)
+2025-05-08 20:36:26,952 - logfile - DEBUG - MQTT-KAMELEN/OUT/KAMEEL3_ISREADY 0 b'1'
+2025-05-08 20:36:26,952 - logfile - INFO - received message: 'KAMELEN/OUT/KAMEEL3_ISREADY' '1'
+2025-05-08 20:36:26,954 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m33), 'b'KAMELEN/IN/LICHT'', ... (10 bytes)
+2025-05-08 20:36:26,954 - logfile - DEBUG - MQTT-published: 33
+2025-05-08 20:36:26,954 - logfile - INFO - MQTT-Send `standby_p3` to topic `KAMELEN/IN/LICHT`
+2025-05-08 20:36:27,054 - logfile - DEBUG - MQTT-Received PUBLISH (d0, q0, r0, m0), 'KAMELEN/OUT/KAMEEL4_ISREADY', ...  (1 bytes)
+2025-05-08 20:36:27,054 - logfile - DEBUG - MQTT-KAMELEN/OUT/KAMEEL4_ISREADY 0 b'0'
+2025-05-08 20:36:27,054 - logfile - INFO - received message: 'KAMELEN/OUT/KAMEEL4_ISREADY' '0'
+2025-05-08 20:36:27,156 - logfile - DEBUG - MQTT-Received PUBLISH (d0, q0, r0, m0), 'KAMELEN/OUT/KAMEEL4_ISREADY', ...  (1 bytes)
+2025-05-08 20:36:27,156 - logfile - DEBUG - MQTT-KAMELEN/OUT/KAMEEL4_ISREADY 0 b'1'
+2025-05-08 20:36:27,156 - logfile - INFO - received message: 'KAMELEN/OUT/KAMEEL4_ISREADY' '1'
+2025-05-08 20:36:27,157 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m34), 'b'KAMELEN/IN/LICHT'', ... (10 bytes)
+2025-05-08 20:36:27,157 - logfile - DEBUG - MQTT-published: 34
+2025-05-08 20:36:27,157 - logfile - INFO - MQTT-Send `standby_p4` to topic `KAMELEN/IN/LICHT`
+2025-05-08 20:36:27,158 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m35), 'b'GAMECONTROLLER/OUT/STATE'', ... (7 bytes)
+2025-05-08 20:36:27,158 - logfile - DEBUG - MQTT-published: 35
+2025-05-08 20:36:27,158 - logfile - INFO - MQTT-Send `standby` to topic `GAMECONTROLLER/OUT/STATE`
+2025-05-08 20:36:27,259 - logfile - DEBUG - MQTT-Received PUBLISH (d0, q0, r0, m0), 'KAMELEN/OUT/KAMEEL1_ISREADY', ...  (1 bytes)
+2025-05-08 20:36:27,259 - logfile - DEBUG - MQTT-KAMELEN/OUT/KAMEEL1_ISREADY 0 b'0'
+2025-05-08 20:36:27,259 - logfile - INFO - received message: 'KAMELEN/OUT/KAMEEL1_ISREADY' '0'
+2025-05-08 20:36:27,360 - logfile - DEBUG - MQTT-Received PUBLISH (d0, q0, r0, m0), 'KAMELEN/OUT/KAMEEL1_ISREADY', ...  (1 bytes)
+2025-05-08 20:36:27,360 - logfile - DEBUG - MQTT-KAMELEN/OUT/KAMEEL1_ISREADY 0 b'1'
+2025-05-08 20:36:27,360 - logfile - INFO - received message: 'KAMELEN/OUT/KAMEEL1_ISREADY' '1'
+2025-05-08 20:36:27,461 - logfile - DEBUG - MQTT-Received PUBLISH (d0, q0, r0, m0), 'KAMELEN/OUT/KAMEEL2_ISREADY', ...  (1 bytes)
+2025-05-08 20:36:27,461 - logfile - DEBUG - MQTT-KAMELEN/OUT/KAMEEL2_ISREADY 0 b'0'
+2025-05-08 20:36:27,461 - logfile - INFO - received message: 'KAMELEN/OUT/KAMEEL2_ISREADY' '0'
+2025-05-08 20:36:27,562 - logfile - DEBUG - MQTT-Received PUBLISH (d0, q0, r0, m0), 'KAMELEN/OUT/KAMEEL2_ISREADY', ...  (1 bytes)
+2025-05-08 20:36:27,562 - logfile - DEBUG - MQTT-KAMELEN/OUT/KAMEEL2_ISREADY 0 b'1'
+2025-05-08 20:36:27,562 - logfile - INFO - received message: 'KAMELEN/OUT/KAMEEL2_ISREADY' '1'
+2025-05-08 20:36:27,663 - logfile - DEBUG - MQTT-Received PUBLISH (d0, q0, r0, m0), 'KAMELEN/OUT/KAMEEL3_ISREADY', ...  (1 bytes)
+2025-05-08 20:36:27,663 - logfile - DEBUG - MQTT-KAMELEN/OUT/KAMEEL3_ISREADY 0 b'0'
+2025-05-08 20:36:27,663 - logfile - INFO - received message: 'KAMELEN/OUT/KAMEEL3_ISREADY' '0'
+2025-05-08 20:36:27,764 - logfile - DEBUG - MQTT-Received PUBLISH (d0, q0, r0, m0), 'KAMELEN/OUT/KAMEEL3_ISREADY', ...  (1 bytes)
+2025-05-08 20:36:27,764 - logfile - DEBUG - MQTT-KAMELEN/OUT/KAMEEL3_ISREADY 0 b'1'
+2025-05-08 20:36:27,764 - logfile - INFO - received message: 'KAMELEN/OUT/KAMEEL3_ISREADY' '1'
+2025-05-08 20:36:27,865 - logfile - DEBUG - MQTT-Received PUBLISH (d0, q0, r0, m0), 'KAMELEN/OUT/KAMEEL4_ISREADY', ...  (1 bytes)
+2025-05-08 20:36:27,865 - logfile - DEBUG - MQTT-KAMELEN/OUT/KAMEEL4_ISREADY 0 b'0'
+2025-05-08 20:36:27,865 - logfile - INFO - received message: 'KAMELEN/OUT/KAMEEL4_ISREADY' '0'
+2025-05-08 20:36:27,966 - logfile - DEBUG - MQTT-Received PUBLISH (d0, q0, r0, m0), 'KAMELEN/OUT/KAMEEL4_ISREADY', ...  (1 bytes)
+2025-05-08 20:36:27,966 - logfile - DEBUG - MQTT-KAMELEN/OUT/KAMEEL4_ISREADY 0 b'1'
+2025-05-08 20:36:27,966 - logfile - INFO - received message: 'KAMELEN/OUT/KAMEEL4_ISREADY' '1'
+2025-05-08 20:36:29,172 - logfile - DEBUG - MQTT-Received PUBLISH (d0, q0, r0, m0), 'KNOPPEN/OUT/CMD', ...  (5 bytes)
+2025-05-08 20:36:29,172 - logfile - DEBUG - MQTT-KNOPPEN/OUT/CMD 0 b'START'
+2025-05-08 20:36:29,172 - logfile - INFO - received message: 'KNOPPEN/OUT/CMD' 'START'
+2025-05-08 20:36:29,172 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m36), 'b'GAMECONTROLLER/OUT/STATE'', ... (11 bytes)
+2025-05-08 20:36:29,172 - logfile - DEBUG - MQTT-published: 36
+2025-05-08 20:36:29,172 - logfile - INFO - MQTT-Send `countdown_5` to topic `GAMECONTROLLER/OUT/STATE`
+2025-05-08 20:36:29,274 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m37), 'b'GAMECONTROLLER/OUT/STATE'', ... (14 bytes)
+2025-05-08 20:36:29,274 - logfile - DEBUG - MQTT-published: 37
+2025-05-08 20:36:29,274 - logfile - INFO - MQTT-Send `waitcountdown5` to topic `GAMECONTROLLER/OUT/STATE`
+2025-05-08 20:36:29,275 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m38), 'b'KAMELEN/IN/LICHT'', ... (11 bytes)
+2025-05-08 20:36:29,275 - logfile - DEBUG - MQTT-published: 38
+2025-05-08 20:36:29,275 - logfile - INFO - MQTT-Send `countdown_5` to topic `KAMELEN/IN/LICHT`
+2025-05-08 20:36:30,280 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m39), 'b'GAMECONTROLLER/OUT/STATE'', ... (11 bytes)
+2025-05-08 20:36:30,280 - logfile - DEBUG - MQTT-published: 39
+2025-05-08 20:36:30,280 - logfile - INFO - MQTT-Send `countdown_4` to topic `GAMECONTROLLER/OUT/STATE`
+2025-05-08 20:36:30,381 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m40), 'b'GAMECONTROLLER/OUT/STATE'', ... (14 bytes)
+2025-05-08 20:36:30,381 - logfile - DEBUG - MQTT-published: 40
+2025-05-08 20:36:30,381 - logfile - INFO - MQTT-Send `waitcountdown4` to topic `GAMECONTROLLER/OUT/STATE`
+2025-05-08 20:36:30,383 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m41), 'b'KAMELEN/IN/LICHT'', ... (11 bytes)
+2025-05-08 20:36:30,383 - logfile - DEBUG - MQTT-published: 41
+2025-05-08 20:36:30,383 - logfile - INFO - MQTT-Send `countdown_4` to topic `KAMELEN/IN/LICHT`
+2025-05-08 20:36:31,286 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m42), 'b'GAMECONTROLLER/OUT/STATE'', ... (11 bytes)
+2025-05-08 20:36:31,287 - logfile - DEBUG - MQTT-published: 42
+2025-05-08 20:36:31,287 - logfile - INFO - MQTT-Send `countdown_3` to topic `GAMECONTROLLER/OUT/STATE`
+2025-05-08 20:36:31,388 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m43), 'b'GAMECONTROLLER/OUT/STATE'', ... (14 bytes)
+2025-05-08 20:36:31,388 - logfile - DEBUG - MQTT-published: 43
+2025-05-08 20:36:31,388 - logfile - INFO - MQTT-Send `waitcountdown3` to topic `GAMECONTROLLER/OUT/STATE`
+2025-05-08 20:36:31,389 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m44), 'b'KAMELEN/IN/LICHT'', ... (11 bytes)
+2025-05-08 20:36:31,389 - logfile - DEBUG - MQTT-published: 44
+2025-05-08 20:36:31,389 - logfile - INFO - MQTT-Send `countdown_3` to topic `KAMELEN/IN/LICHT`
+2025-05-08 20:36:32,193 - logfile - DEBUG - MQTT-Sending PINGREQ
+2025-05-08 20:36:32,194 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m45), 'b'GAMECONTROLLER/OUT/STATE'', ... (11 bytes)
+2025-05-08 20:36:32,194 - logfile - DEBUG - MQTT-published: 45
+2025-05-08 20:36:32,194 - logfile - INFO - MQTT-Send `countdown_2` to topic `GAMECONTROLLER/OUT/STATE`
+2025-05-08 20:36:32,295 - logfile - DEBUG - MQTT-Received PINGRESP
+2025-05-08 20:36:32,295 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m46), 'b'GAMECONTROLLER/OUT/STATE'', ... (14 bytes)
+2025-05-08 20:36:32,295 - logfile - DEBUG - MQTT-published: 46
+2025-05-08 20:36:32,295 - logfile - INFO - MQTT-Send `waitcountdown2` to topic `GAMECONTROLLER/OUT/STATE`
+2025-05-08 20:36:32,295 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m47), 'b'KAMELEN/IN/LICHT'', ... (11 bytes)
+2025-05-08 20:36:32,296 - logfile - DEBUG - MQTT-published: 47
+2025-05-08 20:36:32,296 - logfile - INFO - MQTT-Send `countdown_2` to topic `KAMELEN/IN/LICHT`
+2025-05-08 20:36:33,301 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m48), 'b'GAMECONTROLLER/OUT/STATE'', ... (11 bytes)
+2025-05-08 20:36:33,301 - logfile - DEBUG - MQTT-published: 48
+2025-05-08 20:36:33,302 - logfile - INFO - MQTT-Send `countdown_1` to topic `GAMECONTROLLER/OUT/STATE`
+2025-05-08 20:36:33,403 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m49), 'b'GAMECONTROLLER/OUT/STATE'', ... (14 bytes)
+2025-05-08 20:36:33,403 - logfile - DEBUG - MQTT-published: 49
+2025-05-08 20:36:33,403 - logfile - INFO - MQTT-Send `waitcountdown1` to topic `GAMECONTROLLER/OUT/STATE`
+2025-05-08 20:36:33,404 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m50), 'b'KAMELEN/IN/LICHT'', ... (11 bytes)
+2025-05-08 20:36:33,404 - logfile - DEBUG - MQTT-published: 50
+2025-05-08 20:36:33,405 - logfile - INFO - MQTT-Send `countdown_1` to topic `KAMELEN/IN/LICHT`
+2025-05-22 19:26:04,069 - logfile - DEBUG - MQTT-Sending CONNECT (u0, p0, wr0, wq0, wf0, c1, k10) client_id=b'subscribe-76'
+2025-05-22 19:26:04,070 - logfile - DEBUG - MQTT-Sending SUBSCRIBE (d0, m1) [(b'SPEELBAK1/OUT/#', 0)]
+2025-05-22 19:26:04,070 - logfile - DEBUG - MQTT-Sending SUBSCRIBE (d0, m2) [(b'SPEELBAK2/OUT/#', 0)]
+2025-05-22 19:26:04,070 - logfile - DEBUG - MQTT-Sending SUBSCRIBE (d0, m3) [(b'SPEELBAK3/OUT/#', 0)]
+2025-05-22 19:26:04,070 - logfile - DEBUG - MQTT-Sending SUBSCRIBE (d0, m4) [(b'SPEELBAK4/OUT/#', 0)]
+2025-05-22 19:26:04,070 - logfile - DEBUG - MQTT-Sending SUBSCRIBE (d0, m5) [(b'KNOPPEN/OUT/#', 0)]
+2025-05-22 19:26:04,070 - logfile - DEBUG - MQTT-Sending SUBSCRIBE (d0, m6) [(b'KAMELEN/OUT/#', 0)]
+2025-05-22 19:26:04,071 - logfile - DEBUG - MQTT-Sending SUBSCRIBE (d0, m7) [(b'GAMECONTROLLER/IN/#', 0)]
+2025-05-22 19:26:04,071 - logfile - DEBUG - MQTT-Sending PUBLISH (d0, q0, r0, m8), 'b'GAMECONTROLLER/OUT/SCOREMULTIPLIER'', ... (1 bytes)
+2025-05-22 19:26:04,071 - logfile - DEBUG - MQTT-published: 8
+2025-05-22 19:26:04,071 - logfile - INFO - MQTT-Send `2` to topic `GAMECONTROLLER/OUT/SCOREMULTIPLIER`
